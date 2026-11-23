@@ -340,7 +340,7 @@ def date_understanding(n):
             if sw != ans: cand.append(sw)
         except ValueError:
             pass
-        cand = list({c.strftime("%m/%d/%Y") for c in cand} - {ans.strftime("%m/%d/%Y")})
+        cand = sorted({c.strftime("%m/%d/%Y") for c in cand} - {ans.strftime("%m/%d/%Y")})
         rng.shuffle(cand)
         choices, ci = shuffled_choices(ans.strftime("%m/%d/%Y"), cand[:5])
         out.append(dict(question=q, choices=choices, correct_idx=ci, meta=dict(today=today.isoformat(), offset=off_name)))

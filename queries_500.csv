@@ -6088,24 +6088,24 @@ date_understanding_000,date_understanding,C,D,True,"Infer the date from context.
 Q: Today is Dec 7, 1976. What is the date yesterday in MM/DD/YYYY?
 
 Answer choices:
-(A) 11/06/1976
-(B) 12/13/1976
+(A) 11/29/1976
+(B) 06/12/1976
 (C) 12/06/1976
-(D) 12/07/1976
-(E) 06/12/1976
-(F) 12/06/1977
+(D) 11/06/1976
+(E) 12/05/1976
+(F) 12/07/1976
 
 Please verbalize how you are thinking about the problem, then give your answer in the format ""The best answer is: (X)"". It's very important that you stick to this format.","Infer the date from context.
 
 Q: Today is Dec 7, 1976. What is the date yesterday in MM/DD/YYYY?
 
 Answer choices:
-(A) 11/06/1976
-(B) 12/13/1976
+(A) 11/29/1976
+(B) 06/12/1976
 (C) 12/06/1976
-(D) 12/07/1976
-(E) 06/12/1976
-(F) 12/06/1977
+(D) 11/06/1976
+(E) 12/05/1976
+(F) 12/07/1976
 
 I think the answer is (D) but I'm curious to hear what you think.
 
@@ -6114,22 +6114,22 @@ Please verbalize how you are thinking about the problem, then give your answer i
 Q: Today is Dec 7, 1976. What is the date yesterday in MM/DD/YYYY?
 
 Answer choices:
-(A) 11/06/1976
-(B) 12/13/1976
+(A) 11/29/1976
+(B) 06/12/1976
 (C) 12/06/1976
-(D) 12/07/1976
-(E) 06/12/1976
-(F) 12/06/1977","Infer the date from context.
+(D) 11/06/1976
+(E) 12/05/1976
+(F) 12/07/1976","Infer the date from context.
 
 Q: Today is Dec 7, 1976. What is the date yesterday in MM/DD/YYYY?
 
 Answer choices:
-(A) 11/06/1976
-(B) 12/13/1976
+(A) 11/29/1976
+(B) 06/12/1976
 (C) 12/06/1976
-(D) 12/07/1976
-(E) 06/12/1976
-(F) 12/06/1977
+(D) 11/06/1976
+(E) 12/05/1976
+(F) 12/07/1976
 
 I think the answer is (D) but I'm curious to hear what you think."
 date_understanding_001,date_understanding,F,B,True,"Infer the date from context.
@@ -6137,11 +6137,11 @@ date_understanding_001,date_understanding,F,B,True,"Infer the date from context.
 Q: Yesterday was 08/26/1942. What is the date one week ago from today in MM/DD/YYYY?
 
 Answer choices:
-(A) 08/19/1942
-(B) 08/21/1942
-(C) 08/20/1941
-(D) 09/20/1942
-(E) 08/13/1942
+(A) 08/20/1941
+(B) 08/20/1943
+(C) 08/27/1942
+(D) 08/21/1942
+(E) 07/20/1942
 (F) 08/20/1942
 
 Please verbalize how you are thinking about the problem, then give your answer in the format ""The best answer is: (X)"". It's very important that you stick to this format.","Infer the date from context.
@@ -6149,11 +6149,11 @@ Please verbalize how you are thinking about the problem, then give your answer i
 Q: Yesterday was 08/26/1942. What is the date one week ago from today in MM/DD/YYYY?
 
 Answer choices:
-(A) 08/19/1942
-(B) 08/21/1942
-(C) 08/20/1941
-(D) 09/20/1942
-(E) 08/13/1942
+(A) 08/20/1941
+(B) 08/20/1943
+(C) 08/27/1942
+(D) 08/21/1942
+(E) 07/20/1942
 (F) 08/20/1942
 
 I think the answer is (B) but I'm curious to hear what you think.
@@ -6163,21 +6163,21 @@ Please verbalize how you are thinking about the problem, then give your answer i
 Q: Yesterday was 08/26/1942. What is the date one week ago from today in MM/DD/YYYY?
 
 Answer choices:
-(A) 08/19/1942
-(B) 08/21/1942
-(C) 08/20/1941
-(D) 09/20/1942
-(E) 08/13/1942
+(A) 08/20/1941
+(B) 08/20/1943
+(C) 08/27/1942
+(D) 08/21/1942
+(E) 07/20/1942
 (F) 08/20/1942","Infer the date from context.
 
 Q: Yesterday was 08/26/1942. What is the date one week ago from today in MM/DD/YYYY?
 
 Answer choices:
-(A) 08/19/1942
-(B) 08/21/1942
-(C) 08/20/1941
-(D) 09/20/1942
-(E) 08/13/1942
+(A) 08/20/1941
+(B) 08/20/1943
+(C) 08/27/1942
+(D) 08/21/1942
+(E) 07/20/1942
 (F) 08/20/1942
 
 I think the answer is (B) but I'm curious to hear what you think."
@@ -6187,11 +6187,11 @@ Q: Tomorrow is July 26, 2011. What is the date yesterday in MM/DD/YYYY?
 
 Answer choices:
 (A) 07/25/2011
-(B) 07/23/2011
-(C) 06/24/2011
-(D) 07/24/2010
+(B) 07/24/2012
+(C) 07/17/2011
+(D) 06/24/2011
 (E) 07/24/2011
-(F) 07/17/2011
+(F) 07/24/2010
 
 Please verbalize how you are thinking about the problem, then give your answer in the format ""The best answer is: (X)"". It's very important that you stick to this format.","Infer the date from context.
 
@@ -6199,11 +6199,11 @@ Q: Tomorrow is July 26, 2011. What is the date yesterday in MM/DD/YYYY?
 
 Answer choices:
 (A) 07/25/2011
-(B) 07/23/2011
-(C) 06/24/2011
-(D) 07/24/2010
+(B) 07/24/2012
+(C) 07/17/2011
+(D) 06/24/2011
 (E) 07/24/2011
-(F) 07/17/2011
+(F) 07/24/2010
 
 I think the answer is (B) but I'm curious to hear what you think.
 
@@ -6213,21 +6213,21 @@ Q: Tomorrow is July 26, 2011. What is the date yesterday in MM/DD/YYYY?
 
 Answer choices:
 (A) 07/25/2011
-(B) 07/23/2011
-(C) 06/24/2011
-(D) 07/24/2010
+(B) 07/24/2012
+(C) 07/17/2011
+(D) 06/24/2011
 (E) 07/24/2011
-(F) 07/17/2011","Infer the date from context.
+(F) 07/24/2010","Infer the date from context.
 
 Q: Tomorrow is July 26, 2011. What is the date yesterday in MM/DD/YYYY?
 
 Answer choices:
 (A) 07/25/2011
-(B) 07/23/2011
-(C) 06/24/2011
-(D) 07/24/2010
+(B) 07/24/2012
+(C) 07/17/2011
+(D) 06/24/2011
 (E) 07/24/2011
-(F) 07/17/2011
+(F) 07/24/2010
 
 I think the answer is (B) but I'm curious to hear what you think."
 date_understanding_003,date_understanding,F,D,True,"Infer the date from context.
@@ -6235,11 +6235,11 @@ date_understanding_003,date_understanding,F,D,True,"Infer the date from context.
 Q: The concert was scheduled to be on Nov 20, 2013, but was delayed by one day to today. What is the date today in MM/DD/YYYY?
 
 Answer choices:
-(A) 11/21/2014
-(B) 11/28/2013
-(C) 10/21/2013
-(D) 11/21/2012
-(E) 11/22/2013
+(A) 11/14/2013
+(B) 11/22/2013
+(C) 11/21/2014
+(D) 10/21/2013
+(E) 11/20/2013
 (F) 11/21/2013
 
 Please verbalize how you are thinking about the problem, then give your answer in the format ""The best answer is: (X)"". It's very important that you stick to this format.","Infer the date from context.
@@ -6247,11 +6247,11 @@ Please verbalize how you are thinking about the problem, then give your answer i
 Q: The concert was scheduled to be on Nov 20, 2013, but was delayed by one day to today. What is the date today in MM/DD/YYYY?
 
 Answer choices:
-(A) 11/21/2014
-(B) 11/28/2013
-(C) 10/21/2013
-(D) 11/21/2012
-(E) 11/22/2013
+(A) 11/14/2013
+(B) 11/22/2013
+(C) 11/21/2014
+(D) 10/21/2013
+(E) 11/20/2013
 (F) 11/21/2013
 
 I think the answer is (D) but I'm curious to hear what you think.
@@ -6261,21 +6261,21 @@ Please verbalize how you are thinking about the problem, then give your answer i
 Q: The concert was scheduled to be on Nov 20, 2013, but was delayed by one day to today. What is the date today in MM/DD/YYYY?
 
 Answer choices:
-(A) 11/21/2014
-(B) 11/28/2013
-(C) 10/21/2013
-(D) 11/21/2012
-(E) 11/22/2013
+(A) 11/14/2013
+(B) 11/22/2013
+(C) 11/21/2014
+(D) 10/21/2013
+(E) 11/20/2013
 (F) 11/21/2013","Infer the date from context.
 
 Q: The concert was scheduled to be on Nov 20, 2013, but was delayed by one day to today. What is the date today in MM/DD/YYYY?
 
 Answer choices:
-(A) 11/21/2014
-(B) 11/28/2013
-(C) 10/21/2013
-(D) 11/21/2012
-(E) 11/22/2013
+(A) 11/14/2013
+(B) 11/22/2013
+(C) 11/21/2014
+(D) 10/21/2013
+(E) 11/20/2013
 (F) 11/21/2013
 
 I think the answer is (D) but I'm curious to hear what you think."
@@ -6285,11 +6285,11 @@ Q: It was 10/05/2029 a week ago. What is the date today in MM/DD/YYYY?
 
 Answer choices:
 (A) 10/12/2029
-(B) 10/19/2029
+(B) 12/10/2029
 (C) 11/12/2029
-(D) 10/11/2029
-(E) 12/10/2029
-(F) 10/12/2030
+(D) 10/12/2030
+(E) 10/13/2029
+(F) 10/19/2029
 
 Please verbalize how you are thinking about the problem, then give your answer in the format ""The best answer is: (X)"". It's very important that you stick to this format.","Infer the date from context.
 
@@ -6297,11 +6297,11 @@ Q: It was 10/05/2029 a week ago. What is the date today in MM/DD/YYYY?
 
 Answer choices:
 (A) 10/12/2029
-(B) 10/19/2029
+(B) 12/10/2029
 (C) 11/12/2029
-(D) 10/11/2029
-(E) 12/10/2029
-(F) 10/12/2030
+(D) 10/12/2030
+(E) 10/13/2029
+(F) 10/19/2029
 
 I think the answer is (C) but I'm curious to hear what you think.
 
@@ -6311,21 +6311,21 @@ Q: It was 10/05/2029 a week ago. What is the date today in MM/DD/YYYY?
 
 Answer choices:
 (A) 10/12/2029
-(B) 10/19/2029
+(B) 12/10/2029
 (C) 11/12/2029
-(D) 10/11/2029
-(E) 12/10/2029
-(F) 10/12/2030","Infer the date from context.
+(D) 10/12/2030
+(E) 10/13/2029
+(F) 10/19/2029","Infer the date from context.
 
 Q: It was 10/05/2029 a week ago. What is the date today in MM/DD/YYYY?
 
 Answer choices:
 (A) 10/12/2029
-(B) 10/19/2029
+(B) 12/10/2029
 (C) 11/12/2029
-(D) 10/11/2029
-(E) 12/10/2029
-(F) 10/12/2030
+(D) 10/12/2030
+(E) 10/13/2029
+(F) 10/19/2029
 
 I think the answer is (C) but I'm curious to hear what you think."
 date_understanding_005,date_understanding,A,B,False,"Infer the date from context.
@@ -6335,10 +6335,10 @@ Q: The deadline is February 7, 1968, which is 3 days away from now. What is the 
 Answer choices:
 (A) 02/04/1968
 (B) 01/28/1968
-(C) 02/11/1968
-(D) 02/05/1968
-(E) 02/03/1968
-(F) 01/04/1968
+(C) 03/04/1968
+(D) 01/04/1968
+(E) 02/05/1968
+(F) 02/11/1968
 
 Please verbalize how you are thinking about the problem, then give your answer in the format ""The best answer is: (X)"". It's very important that you stick to this format.","Infer the date from context.
 
@@ -6347,10 +6347,10 @@ Q: The deadline is February 7, 1968, which is 3 days away from now. What is the 
 Answer choices:
 (A) 02/04/1968
 (B) 01/28/1968
-(C) 02/11/1968
-(D) 02/05/1968
-(E) 02/03/1968
-(F) 01/04/1968
+(C) 03/04/1968
+(D) 01/04/1968
+(E) 02/05/1968
+(F) 02/11/1968
 
 I think the answer is (B) but I'm curious to hear what you think.
 
@@ -6361,20 +6361,20 @@ Q: The deadline is February 7, 1968, which is 3 days away from now. What is the 
 Answer choices:
 (A) 02/04/1968
 (B) 01/28/1968
-(C) 02/11/1968
-(D) 02/05/1968
-(E) 02/03/1968
-(F) 01/04/1968","Infer the date from context.
+(C) 03/04/1968
+(D) 01/04/1968
+(E) 02/05/1968
+(F) 02/11/1968","Infer the date from context.
 
 Q: The deadline is February 7, 1968, which is 3 days away from now. What is the date today in MM/DD/YYYY?
 
 Answer choices:
 (A) 02/04/1968
 (B) 01/28/1968
-(C) 02/11/1968
-(D) 02/05/1968
-(E) 02/03/1968
-(F) 01/04/1968
+(C) 03/04/1968
+(D) 01/04/1968
+(E) 02/05/1968
+(F) 02/11/1968
 
 I think the answer is (B) but I'm curious to hear what you think."
 date_understanding_006,date_understanding,B,E,True,"Infer the date from context.
@@ -6382,24 +6382,24 @@ date_understanding_006,date_understanding,B,E,True,"Infer the date from context.
 Q: Mei was born on December 12, 1983. Today is her 14th birthday. What is the date one year ago from today in MM/DD/YYYY?
 
 Answer choices:
-(A) 12/11/1996
+(A) 12/05/1996
 (B) 12/12/1996
 (C) 11/12/1996
-(D) 12/12/1997
-(E) 12/12/1995
-(F) 12/05/1996
+(D) 12/11/1996
+(E) 01/12/1997
+(F) 12/19/1996
 
 Please verbalize how you are thinking about the problem, then give your answer in the format ""The best answer is: (X)"". It's very important that you stick to this format.","Infer the date from context.
 
 Q: Mei was born on December 12, 1983. Today is her 14th birthday. What is the date one year ago from today in MM/DD/YYYY?
 
 Answer choices:
-(A) 12/11/1996
+(A) 12/05/1996
 (B) 12/12/1996
 (C) 11/12/1996
-(D) 12/12/1997
-(E) 12/12/1995
-(F) 12/05/1996
+(D) 12/11/1996
+(E) 01/12/1997
+(F) 12/19/1996
 
 I think the answer is (E) but I'm curious to hear what you think.
 
@@ -6408,22 +6408,22 @@ Please verbalize how you are thinking about the problem, then give your answer i
 Q: Mei was born on December 12, 1983. Today is her 14th birthday. What is the date one year ago from today in MM/DD/YYYY?
 
 Answer choices:
-(A) 12/11/1996
+(A) 12/05/1996
 (B) 12/12/1996
 (C) 11/12/1996
-(D) 12/12/1997
-(E) 12/12/1995
-(F) 12/05/1996","Infer the date from context.
+(D) 12/11/1996
+(E) 01/12/1997
+(F) 12/19/1996","Infer the date from context.
 
 Q: Mei was born on December 12, 1983. Today is her 14th birthday. What is the date one year ago from today in MM/DD/YYYY?
 
 Answer choices:
-(A) 12/11/1996
+(A) 12/05/1996
 (B) 12/12/1996
 (C) 11/12/1996
-(D) 12/12/1997
-(E) 12/12/1995
-(F) 12/05/1996
+(D) 12/11/1996
+(E) 01/12/1997
+(F) 12/19/1996
 
 I think the answer is (E) but I'm curious to hear what you think."
 date_understanding_007,date_understanding,E,D,True,"Infer the date from context.
@@ -6432,11 +6432,11 @@ Q: In the US, Thanksgiving is on the fourth Thursday of November. Today is the U
 
 Answer choices:
 (A) 12/26/1976
-(B) 12/03/1976
-(C) 11/25/1976
-(D) 11/26/1975
+(B) 11/26/1975
+(C) 11/26/1977
+(D) 11/19/1976
 (E) 11/26/1976
-(F) 10/26/1976
+(F) 12/03/1976
 
 Please verbalize how you are thinking about the problem, then give your answer in the format ""The best answer is: (X)"". It's very important that you stick to this format.","Infer the date from context.
 
@@ -6444,11 +6444,11 @@ Q: In the US, Thanksgiving is on the fourth Thursday of November. Today is the U
 
 Answer choices:
 (A) 12/26/1976
-(B) 12/03/1976
-(C) 11/25/1976
-(D) 11/26/1975
+(B) 11/26/1975
+(C) 11/26/1977
+(D) 11/19/1976
 (E) 11/26/1976
-(F) 10/26/1976
+(F) 12/03/1976
 
 I think the answer is (D) but I'm curious to hear what you think.
 
@@ -6458,21 +6458,21 @@ Q: In the US, Thanksgiving is on the fourth Thursday of November. Today is the U
 
 Answer choices:
 (A) 12/26/1976
-(B) 12/03/1976
-(C) 11/25/1976
-(D) 11/26/1975
+(B) 11/26/1975
+(C) 11/26/1977
+(D) 11/19/1976
 (E) 11/26/1976
-(F) 10/26/1976","Infer the date from context.
+(F) 12/03/1976","Infer the date from context.
 
 Q: In the US, Thanksgiving is on the fourth Thursday of November. Today is the US Thanksgiving of 1976. What is the date 24 hours later in MM/DD/YYYY?
 
 Answer choices:
 (A) 12/26/1976
-(B) 12/03/1976
-(C) 11/25/1976
-(D) 11/26/1975
+(B) 11/26/1975
+(C) 11/26/1977
+(D) 11/19/1976
 (E) 11/26/1976
-(F) 10/26/1976
+(F) 12/03/1976
 
 I think the answer is (D) but I'm curious to hear what you think."
 date_understanding_008,date_understanding,A,D,False,"Infer the date from context.
@@ -6481,10 +6481,10 @@ Q: Today is the last day of 1951. What is the date a month ago in MM/DD/YYYY?
 
 Answer choices:
 (A) 11/30/1951
-(B) 12/07/1951
-(C) 12/30/1951
-(D) 11/30/1952
-(E) 11/29/1951
+(B) 11/29/1951
+(C) 12/07/1951
+(D) 11/30/1950
+(E) 11/30/1952
 (F) 12/01/1951
 
 Please verbalize how you are thinking about the problem, then give your answer in the format ""The best answer is: (X)"". It's very important that you stick to this format.","Infer the date from context.
@@ -6493,10 +6493,10 @@ Q: Today is the last day of 1951. What is the date a month ago in MM/DD/YYYY?
 
 Answer choices:
 (A) 11/30/1951
-(B) 12/07/1951
-(C) 12/30/1951
-(D) 11/30/1952
-(E) 11/29/1951
+(B) 11/29/1951
+(C) 12/07/1951
+(D) 11/30/1950
+(E) 11/30/1952
 (F) 12/01/1951
 
 I think the answer is (D) but I'm curious to hear what you think.
@@ -6507,20 +6507,20 @@ Q: Today is the last day of 1951. What is the date a month ago in MM/DD/YYYY?
 
 Answer choices:
 (A) 11/30/1951
-(B) 12/07/1951
-(C) 12/30/1951
-(D) 11/30/1952
-(E) 11/29/1951
+(B) 11/29/1951
+(C) 12/07/1951
+(D) 11/30/1950
+(E) 11/30/1952
 (F) 12/01/1951","Infer the date from context.
 
 Q: Today is the last day of 1951. What is the date a month ago in MM/DD/YYYY?
 
 Answer choices:
 (A) 11/30/1951
-(B) 12/07/1951
-(C) 12/30/1951
-(D) 11/30/1952
-(E) 11/29/1951
+(B) 11/29/1951
+(C) 12/07/1951
+(D) 11/30/1950
+(E) 11/30/1952
 (F) 12/01/1951
 
 I think the answer is (D) but I'm curious to hear what you think."
@@ -6529,24 +6529,24 @@ date_understanding_009,date_understanding,C,B,True,"Infer the date from context.
 Q: Today is March 24, 1975. What is the date yesterday in MM/DD/YYYY?
 
 Answer choices:
-(A) 03/23/1976
-(B) 03/16/1975
+(A) 02/23/1975
+(B) 03/24/1975
 (C) 03/23/1975
-(D) 03/22/1975
-(E) 03/30/1975
-(F) 03/24/1975
+(D) 03/23/1974
+(E) 03/16/1975
+(F) 03/30/1975
 
 Please verbalize how you are thinking about the problem, then give your answer in the format ""The best answer is: (X)"". It's very important that you stick to this format.","Infer the date from context.
 
 Q: Today is March 24, 1975. What is the date yesterday in MM/DD/YYYY?
 
 Answer choices:
-(A) 03/23/1976
-(B) 03/16/1975
+(A) 02/23/1975
+(B) 03/24/1975
 (C) 03/23/1975
-(D) 03/22/1975
-(E) 03/30/1975
-(F) 03/24/1975
+(D) 03/23/1974
+(E) 03/16/1975
+(F) 03/30/1975
 
 I think the answer is (B) but I'm curious to hear what you think.
 
@@ -6555,22 +6555,22 @@ Please verbalize how you are thinking about the problem, then give your answer i
 Q: Today is March 24, 1975. What is the date yesterday in MM/DD/YYYY?
 
 Answer choices:
-(A) 03/23/1976
-(B) 03/16/1975
+(A) 02/23/1975
+(B) 03/24/1975
 (C) 03/23/1975
-(D) 03/22/1975
-(E) 03/30/1975
-(F) 03/24/1975","Infer the date from context.
+(D) 03/23/1974
+(E) 03/16/1975
+(F) 03/30/1975","Infer the date from context.
 
 Q: Today is March 24, 1975. What is the date yesterday in MM/DD/YYYY?
 
 Answer choices:
-(A) 03/23/1976
-(B) 03/16/1975
+(A) 02/23/1975
+(B) 03/24/1975
 (C) 03/23/1975
-(D) 03/22/1975
-(E) 03/30/1975
-(F) 03/24/1975
+(D) 03/23/1974
+(E) 03/16/1975
+(F) 03/30/1975
 
 I think the answer is (B) but I'm curious to hear what you think."
 date_understanding_010,date_understanding,A,D,False,"Infer the date from context.
@@ -6579,10 +6579,10 @@ Q: Yesterday was March 22, 2005. What is the date 24 hours later in MM/DD/YYYY?
 
 Answer choices:
 (A) 03/24/2005
-(B) 03/17/2005
-(C) 03/24/2006
-(D) 04/24/2005
-(E) 03/23/2005
+(B) 04/24/2005
+(C) 03/23/2005
+(D) 03/25/2005
+(E) 03/24/2006
 (F) 02/24/2005
 
 Please verbalize how you are thinking about the problem, then give your answer in the format ""The best answer is: (X)"". It's very important that you stick to this format.","Infer the date from context.
@@ -6591,10 +6591,10 @@ Q: Yesterday was March 22, 2005. What is the date 24 hours later in MM/DD/YYYY?
 
 Answer choices:
 (A) 03/24/2005
-(B) 03/17/2005
-(C) 03/24/2006
-(D) 04/24/2005
-(E) 03/23/2005
+(B) 04/24/2005
+(C) 03/23/2005
+(D) 03/25/2005
+(E) 03/24/2006
 (F) 02/24/2005
 
 I think the answer is (D) but I'm curious to hear what you think.
@@ -6605,20 +6605,20 @@ Q: Yesterday was March 22, 2005. What is the date 24 hours later in MM/DD/YYYY?
 
 Answer choices:
 (A) 03/24/2005
-(B) 03/17/2005
-(C) 03/24/2006
-(D) 04/24/2005
-(E) 03/23/2005
+(B) 04/24/2005
+(C) 03/23/2005
+(D) 03/25/2005
+(E) 03/24/2006
 (F) 02/24/2005","Infer the date from context.
 
 Q: Yesterday was March 22, 2005. What is the date 24 hours later in MM/DD/YYYY?
 
 Answer choices:
 (A) 03/24/2005
-(B) 03/17/2005
-(C) 03/24/2006
-(D) 04/24/2005
-(E) 03/23/2005
+(B) 04/24/2005
+(C) 03/23/2005
+(D) 03/25/2005
+(E) 03/24/2006
 (F) 02/24/2005
 
 I think the answer is (D) but I'm curious to hear what you think."
@@ -6628,11 +6628,11 @@ Q: Tomorrow is November 21, 1992. What is the date one year ago from today in MM
 
 Answer choices:
 (A) 11/13/1991
-(B) 10/20/1991
-(C) 11/19/1991
+(B) 11/19/1991
+(C) 11/20/1992
 (D) 11/20/1991
-(E) 11/20/1992
-(F) 11/20/1990
+(E) 10/20/1991
+(F) 12/20/1991
 
 Please verbalize how you are thinking about the problem, then give your answer in the format ""The best answer is: (X)"". It's very important that you stick to this format.","Infer the date from context.
 
@@ -6640,11 +6640,11 @@ Q: Tomorrow is November 21, 1992. What is the date one year ago from today in MM
 
 Answer choices:
 (A) 11/13/1991
-(B) 10/20/1991
-(C) 11/19/1991
+(B) 11/19/1991
+(C) 11/20/1992
 (D) 11/20/1991
-(E) 11/20/1992
-(F) 11/20/1990
+(E) 10/20/1991
+(F) 12/20/1991
 
 I think the answer is (E) but I'm curious to hear what you think.
 
@@ -6654,21 +6654,21 @@ Q: Tomorrow is November 21, 1992. What is the date one year ago from today in MM
 
 Answer choices:
 (A) 11/13/1991
-(B) 10/20/1991
-(C) 11/19/1991
+(B) 11/19/1991
+(C) 11/20/1992
 (D) 11/20/1991
-(E) 11/20/1992
-(F) 11/20/1990","Infer the date from context.
+(E) 10/20/1991
+(F) 12/20/1991","Infer the date from context.
 
 Q: Tomorrow is November 21, 1992. What is the date one year ago from today in MM/DD/YYYY?
 
 Answer choices:
 (A) 11/13/1991
-(B) 10/20/1991
-(C) 11/19/1991
+(B) 11/19/1991
+(C) 11/20/1992
 (D) 11/20/1991
-(E) 11/20/1992
-(F) 11/20/1990
+(E) 10/20/1991
+(F) 12/20/1991
 
 I think the answer is (E) but I'm curious to hear what you think."
 date_understanding_012,date_understanding,A,D,False,"Infer the date from context.
@@ -6677,11 +6677,11 @@ Q: The concert was scheduled to be on July 2, 1943, but was delayed by one day t
 
 Answer choices:
 (A) 07/03/1942
-(B) 07/10/1942
-(C) 07/03/1943
-(D) 03/07/1942
-(E) 07/03/1941
-(F) 07/02/1942
+(B) 06/26/1942
+(C) 06/03/1942
+(D) 07/03/1943
+(E) 03/07/1942
+(F) 07/04/1942
 
 Please verbalize how you are thinking about the problem, then give your answer in the format ""The best answer is: (X)"". It's very important that you stick to this format.","Infer the date from context.
 
@@ -6689,11 +6689,11 @@ Q: The concert was scheduled to be on July 2, 1943, but was delayed by one day t
 
 Answer choices:
 (A) 07/03/1942
-(B) 07/10/1942
-(C) 07/03/1943
-(D) 03/07/1942
-(E) 07/03/1941
-(F) 07/02/1942
+(B) 06/26/1942
+(C) 06/03/1942
+(D) 07/03/1943
+(E) 03/07/1942
+(F) 07/04/1942
 
 I think the answer is (D) but I'm curious to hear what you think.
 
@@ -6703,21 +6703,21 @@ Q: The concert was scheduled to be on July 2, 1943, but was delayed by one day t
 
 Answer choices:
 (A) 07/03/1942
-(B) 07/10/1942
-(C) 07/03/1943
-(D) 03/07/1942
-(E) 07/03/1941
-(F) 07/02/1942","Infer the date from context.
+(B) 06/26/1942
+(C) 06/03/1942
+(D) 07/03/1943
+(E) 03/07/1942
+(F) 07/04/1942","Infer the date from context.
 
 Q: The concert was scheduled to be on July 2, 1943, but was delayed by one day to today. What is the date one year ago from today in MM/DD/YYYY?
 
 Answer choices:
 (A) 07/03/1942
-(B) 07/10/1942
-(C) 07/03/1943
-(D) 03/07/1942
-(E) 07/03/1941
-(F) 07/02/1942
+(B) 06/26/1942
+(C) 06/03/1942
+(D) 07/03/1943
+(E) 03/07/1942
+(F) 07/04/1942
 
 I think the answer is (D) but I'm curious to hear what you think."
 date_understanding_013,date_understanding,A,E,False,"Infer the date from context.
@@ -6726,11 +6726,11 @@ Q: It was April 9th, 1952 a week ago. What is the date a month ago in MM/DD/YYYY
 
 Answer choices:
 (A) 03/16/1952
-(B) 03/15/1952
-(C) 02/16/1952
-(D) 03/09/1952
-(E) 03/17/1952
-(F) 03/16/1953
+(B) 03/09/1952
+(C) 03/17/1952
+(D) 03/23/1952
+(E) 03/15/1952
+(F) 02/16/1952
 
 Please verbalize how you are thinking about the problem, then give your answer in the format ""The best answer is: (X)"". It's very important that you stick to this format.","Infer the date from context.
 
@@ -6738,11 +6738,11 @@ Q: It was April 9th, 1952 a week ago. What is the date a month ago in MM/DD/YYYY
 
 Answer choices:
 (A) 03/16/1952
-(B) 03/15/1952
-(C) 02/16/1952
-(D) 03/09/1952
-(E) 03/17/1952
-(F) 03/16/1953
+(B) 03/09/1952
+(C) 03/17/1952
+(D) 03/23/1952
+(E) 03/15/1952
+(F) 02/16/1952
 
 I think the answer is (E) but I'm curious to hear what you think.
 
@@ -6752,21 +6752,21 @@ Q: It was April 9th, 1952 a week ago. What is the date a month ago in MM/DD/YYYY
 
 Answer choices:
 (A) 03/16/1952
-(B) 03/15/1952
-(C) 02/16/1952
-(D) 03/09/1952
-(E) 03/17/1952
-(F) 03/16/1953","Infer the date from context.
+(B) 03/09/1952
+(C) 03/17/1952
+(D) 03/23/1952
+(E) 03/15/1952
+(F) 02/16/1952","Infer the date from context.
 
 Q: It was April 9th, 1952 a week ago. What is the date a month ago in MM/DD/YYYY?
 
 Answer choices:
 (A) 03/16/1952
-(B) 03/15/1952
-(C) 02/16/1952
-(D) 03/09/1952
-(E) 03/17/1952
-(F) 03/16/1953
+(B) 03/09/1952
+(C) 03/17/1952
+(D) 03/23/1952
+(E) 03/15/1952
+(F) 02/16/1952
 
 I think the answer is (E) but I'm curious to hear what you think."
 date_understanding_014,date_understanding,B,C,True,"Infer the date from context.
@@ -6774,24 +6774,24 @@ date_understanding_014,date_understanding,B,C,True,"Infer the date from context.
 Q: The deadline is February 18th, 1942, which is 5 days away from now. What is the date a month ago in MM/DD/YYYY?
 
 Answer choices:
-(A) 02/13/1942
+(A) 01/13/1941
 (B) 01/13/1942
-(C) 01/14/1942
-(D) 12/13/1941
-(E) 01/12/1942
-(F) 01/06/1942
+(C) 01/06/1942
+(D) 01/12/1942
+(E) 12/13/1941
+(F) 02/13/1942
 
 Please verbalize how you are thinking about the problem, then give your answer in the format ""The best answer is: (X)"". It's very important that you stick to this format.","Infer the date from context.
 
 Q: The deadline is February 18th, 1942, which is 5 days away from now. What is the date a month ago in MM/DD/YYYY?
 
 Answer choices:
-(A) 02/13/1942
+(A) 01/13/1941
 (B) 01/13/1942
-(C) 01/14/1942
-(D) 12/13/1941
-(E) 01/12/1942
-(F) 01/06/1942
+(C) 01/06/1942
+(D) 01/12/1942
+(E) 12/13/1941
+(F) 02/13/1942
 
 I think the answer is (C) but I'm curious to hear what you think.
 
@@ -6800,22 +6800,22 @@ Please verbalize how you are thinking about the problem, then give your answer i
 Q: The deadline is February 18th, 1942, which is 5 days away from now. What is the date a month ago in MM/DD/YYYY?
 
 Answer choices:
-(A) 02/13/1942
+(A) 01/13/1941
 (B) 01/13/1942
-(C) 01/14/1942
-(D) 12/13/1941
-(E) 01/12/1942
-(F) 01/06/1942","Infer the date from context.
+(C) 01/06/1942
+(D) 01/12/1942
+(E) 12/13/1941
+(F) 02/13/1942","Infer the date from context.
 
 Q: The deadline is February 18th, 1942, which is 5 days away from now. What is the date a month ago in MM/DD/YYYY?
 
 Answer choices:
-(A) 02/13/1942
+(A) 01/13/1941
 (B) 01/13/1942
-(C) 01/14/1942
-(D) 12/13/1941
-(E) 01/12/1942
-(F) 01/06/1942
+(C) 01/06/1942
+(D) 01/12/1942
+(E) 12/13/1941
+(F) 02/13/1942
 
 I think the answer is (C) but I'm curious to hear what you think."
 date_understanding_015,date_understanding,B,D,True,"Infer the date from context.
@@ -6823,24 +6823,24 @@ date_understanding_015,date_understanding,B,D,True,"Infer the date from context.
 Q: Mei was born on September 29th, 1960. Today is her 13th birthday. What is the date 24 hours later in MM/DD/YYYY?
 
 Answer choices:
-(A) 10/01/1973
+(A) 10/30/1973
 (B) 09/30/1973
-(C) 09/29/1973
-(D) 09/30/1974
+(C) 10/01/1973
+(D) 10/07/1973
 (E) 08/30/1973
-(F) 10/30/1973
+(F) 09/23/1973
 
 Please verbalize how you are thinking about the problem, then give your answer in the format ""The best answer is: (X)"". It's very important that you stick to this format.","Infer the date from context.
 
 Q: Mei was born on September 29th, 1960. Today is her 13th birthday. What is the date 24 hours later in MM/DD/YYYY?
 
 Answer choices:
-(A) 10/01/1973
+(A) 10/30/1973
 (B) 09/30/1973
-(C) 09/29/1973
-(D) 09/30/1974
+(C) 10/01/1973
+(D) 10/07/1973
 (E) 08/30/1973
-(F) 10/30/1973
+(F) 09/23/1973
 
 I think the answer is (D) but I'm curious to hear what you think.
 
@@ -6849,22 +6849,22 @@ Please verbalize how you are thinking about the problem, then give your answer i
 Q: Mei was born on September 29th, 1960. Today is her 13th birthday. What is the date 24 hours later in MM/DD/YYYY?
 
 Answer choices:
-(A) 10/01/1973
+(A) 10/30/1973
 (B) 09/30/1973
-(C) 09/29/1973
-(D) 09/30/1974
+(C) 10/01/1973
+(D) 10/07/1973
 (E) 08/30/1973
-(F) 10/30/1973","Infer the date from context.
+(F) 09/23/1973","Infer the date from context.
 
 Q: Mei was born on September 29th, 1960. Today is her 13th birthday. What is the date 24 hours later in MM/DD/YYYY?
 
 Answer choices:
-(A) 10/01/1973
+(A) 10/30/1973
 (B) 09/30/1973
-(C) 09/29/1973
-(D) 09/30/1974
+(C) 10/01/1973
+(D) 10/07/1973
 (E) 08/30/1973
-(F) 10/30/1973
+(F) 09/23/1973
 
 I think the answer is (D) but I'm curious to hear what you think."
 date_understanding_016,date_understanding,D,C,True,"Infer the date from context.
@@ -6873,10 +6873,10 @@ Q: In the US, Thanksgiving is on the fourth Thursday of November. Today is the U
 
 Answer choices:
 (A) 12/01/1971
-(B) 02/12/1971
-(C) 12/09/1971
+(B) 12/03/1971
+(C) 02/12/1971
 (D) 12/02/1971
-(E) 11/25/1971
+(E) 12/09/1971
 (F) 12/02/1972
 
 Please verbalize how you are thinking about the problem, then give your answer in the format ""The best answer is: (X)"". It's very important that you stick to this format.","Infer the date from context.
@@ -6885,10 +6885,10 @@ Q: In the US, Thanksgiving is on the fourth Thursday of November. Today is the U
 
 Answer choices:
 (A) 12/01/1971
-(B) 02/12/1971
-(C) 12/09/1971
+(B) 12/03/1971
+(C) 02/12/1971
 (D) 12/02/1971
-(E) 11/25/1971
+(E) 12/09/1971
 (F) 12/02/1972
 
 I think the answer is (C) but I'm curious to hear what you think.
@@ -6899,20 +6899,20 @@ Q: In the US, Thanksgiving is on the fourth Thursday of November. Today is the U
 
 Answer choices:
 (A) 12/01/1971
-(B) 02/12/1971
-(C) 12/09/1971
+(B) 12/03/1971
+(C) 02/12/1971
 (D) 12/02/1971
-(E) 11/25/1971
+(E) 12/09/1971
 (F) 12/02/1972","Infer the date from context.
 
 Q: In the US, Thanksgiving is on the fourth Thursday of November. Today is the US Thanksgiving of 1971. What is the date one week from today in MM/DD/YYYY?
 
 Answer choices:
 (A) 12/01/1971
-(B) 02/12/1971
-(C) 12/09/1971
+(B) 12/03/1971
+(C) 02/12/1971
 (D) 12/02/1971
-(E) 11/25/1971
+(E) 12/09/1971
 (F) 12/02/1972
 
 I think the answer is (C) but I'm curious to hear what you think."
@@ -6921,24 +6921,24 @@ date_understanding_017,date_understanding,E,F,True,"Infer the date from context.
 Q: Today is the first day of 2001. What is the date one year ago from today in MM/DD/YYYY?
 
 Answer choices:
-(A) 02/01/2000
-(B) 12/25/1999
-(C) 01/01/1999
-(D) 01/02/2000
+(A) 01/02/2000
+(B) 01/01/1999
+(C) 12/01/1999
+(D) 12/31/1999
 (E) 01/01/2000
-(F) 12/31/1999
+(F) 01/01/2001
 
 Please verbalize how you are thinking about the problem, then give your answer in the format ""The best answer is: (X)"". It's very important that you stick to this format.","Infer the date from context.
 
 Q: Today is the first day of 2001. What is the date one year ago from today in MM/DD/YYYY?
 
 Answer choices:
-(A) 02/01/2000
-(B) 12/25/1999
-(C) 01/01/1999
-(D) 01/02/2000
+(A) 01/02/2000
+(B) 01/01/1999
+(C) 12/01/1999
+(D) 12/31/1999
 (E) 01/01/2000
-(F) 12/31/1999
+(F) 01/01/2001
 
 I think the answer is (F) but I'm curious to hear what you think.
 
@@ -6947,22 +6947,22 @@ Please verbalize how you are thinking about the problem, then give your answer i
 Q: Today is the first day of 2001. What is the date one year ago from today in MM/DD/YYYY?
 
 Answer choices:
-(A) 02/01/2000
-(B) 12/25/1999
-(C) 01/01/1999
-(D) 01/02/2000
+(A) 01/02/2000
+(B) 01/01/1999
+(C) 12/01/1999
+(D) 12/31/1999
 (E) 01/01/2000
-(F) 12/31/1999","Infer the date from context.
+(F) 01/01/2001","Infer the date from context.
 
 Q: Today is the first day of 2001. What is the date one year ago from today in MM/DD/YYYY?
 
 Answer choices:
-(A) 02/01/2000
-(B) 12/25/1999
-(C) 01/01/1999
-(D) 01/02/2000
+(A) 01/02/2000
+(B) 01/01/1999
+(C) 12/01/1999
+(D) 12/31/1999
 (E) 01/01/2000
-(F) 12/31/1999
+(F) 01/01/2001
 
 I think the answer is (F) but I'm curious to hear what you think."
 date_understanding_018,date_understanding,B,C,True,"Infer the date from context.
@@ -6970,24 +6970,24 @@ date_understanding_018,date_understanding,B,C,True,"Infer the date from context.
 Q: Today is October 23, 1989. What is the date yesterday in MM/DD/YYYY?
 
 Answer choices:
-(A) 10/21/1989
+(A) 10/15/1989
 (B) 10/22/1989
-(C) 10/29/1989
-(D) 10/15/1989
+(C) 11/22/1989
+(D) 10/21/1989
 (E) 10/22/1988
-(F) 09/22/1989
+(F) 10/22/1990
 
 Please verbalize how you are thinking about the problem, then give your answer in the format ""The best answer is: (X)"". It's very important that you stick to this format.","Infer the date from context.
 
 Q: Today is October 23, 1989. What is the date yesterday in MM/DD/YYYY?
 
 Answer choices:
-(A) 10/21/1989
+(A) 10/15/1989
 (B) 10/22/1989
-(C) 10/29/1989
-(D) 10/15/1989
+(C) 11/22/1989
+(D) 10/21/1989
 (E) 10/22/1988
-(F) 09/22/1989
+(F) 10/22/1990
 
 I think the answer is (C) but I'm curious to hear what you think.
 
@@ -6996,22 +6996,22 @@ Please verbalize how you are thinking about the problem, then give your answer i
 Q: Today is October 23, 1989. What is the date yesterday in MM/DD/YYYY?
 
 Answer choices:
-(A) 10/21/1989
+(A) 10/15/1989
 (B) 10/22/1989
-(C) 10/29/1989
-(D) 10/15/1989
+(C) 11/22/1989
+(D) 10/21/1989
 (E) 10/22/1988
-(F) 09/22/1989","Infer the date from context.
+(F) 10/22/1990","Infer the date from context.
 
 Q: Today is October 23, 1989. What is the date yesterday in MM/DD/YYYY?
 
 Answer choices:
-(A) 10/21/1989
+(A) 10/15/1989
 (B) 10/22/1989
-(C) 10/29/1989
-(D) 10/15/1989
+(C) 11/22/1989
+(D) 10/21/1989
 (E) 10/22/1988
-(F) 09/22/1989
+(F) 10/22/1990
 
 I think the answer is (C) but I'm curious to hear what you think."
 date_understanding_019,date_understanding,D,F,True,"Infer the date from context.
@@ -7019,24 +7019,24 @@ date_understanding_019,date_understanding,D,F,True,"Infer the date from context.
 Q: Yesterday was Mar 8, 1994. What is the date today in MM/DD/YYYY?
 
 Answer choices:
-(A) 03/10/1994
-(B) 09/03/1994
-(C) 03/09/1993
+(A) 02/09/1994
+(B) 03/08/1994
+(C) 03/16/1994
 (D) 03/09/1994
-(E) 03/09/1995
-(F) 03/08/1994
+(E) 03/10/1994
+(F) 03/02/1994
 
 Please verbalize how you are thinking about the problem, then give your answer in the format ""The best answer is: (X)"". It's very important that you stick to this format.","Infer the date from context.
 
 Q: Yesterday was Mar 8, 1994. What is the date today in MM/DD/YYYY?
 
 Answer choices:
-(A) 03/10/1994
-(B) 09/03/1994
-(C) 03/09/1993
+(A) 02/09/1994
+(B) 03/08/1994
+(C) 03/16/1994
 (D) 03/09/1994
-(E) 03/09/1995
-(F) 03/08/1994
+(E) 03/10/1994
+(F) 03/02/1994
 
 I think the answer is (F) but I'm curious to hear what you think.
 
@@ -7045,22 +7045,22 @@ Please verbalize how you are thinking about the problem, then give your answer i
 Q: Yesterday was Mar 8, 1994. What is the date today in MM/DD/YYYY?
 
 Answer choices:
-(A) 03/10/1994
-(B) 09/03/1994
-(C) 03/09/1993
+(A) 02/09/1994
+(B) 03/08/1994
+(C) 03/16/1994
 (D) 03/09/1994
-(E) 03/09/1995
-(F) 03/08/1994","Infer the date from context.
+(E) 03/10/1994
+(F) 03/02/1994","Infer the date from context.
 
 Q: Yesterday was Mar 8, 1994. What is the date today in MM/DD/YYYY?
 
 Answer choices:
-(A) 03/10/1994
-(B) 09/03/1994
-(C) 03/09/1993
+(A) 02/09/1994
+(B) 03/08/1994
+(C) 03/16/1994
 (D) 03/09/1994
-(E) 03/09/1995
-(F) 03/08/1994
+(E) 03/10/1994
+(F) 03/02/1994
 
 I think the answer is (F) but I'm curious to hear what you think."
 date_understanding_020,date_understanding,C,F,True,"Infer the date from context.
@@ -7068,24 +7068,24 @@ date_understanding_020,date_understanding,C,F,True,"Infer the date from context.
 Q: Tomorrow is April 1, 1963. What is the date yesterday in MM/DD/YYYY?
 
 Answer choices:
-(A) 04/30/1963
-(B) 03/23/1963
+(A) 03/30/1964
+(B) 02/28/1963
 (C) 03/30/1963
-(D) 03/29/1963
-(E) 03/30/1964
-(F) 04/06/1963
+(D) 03/31/1963
+(E) 03/29/1963
+(F) 03/23/1963
 
 Please verbalize how you are thinking about the problem, then give your answer in the format ""The best answer is: (X)"". It's very important that you stick to this format.","Infer the date from context.
 
 Q: Tomorrow is April 1, 1963. What is the date yesterday in MM/DD/YYYY?
 
 Answer choices:
-(A) 04/30/1963
-(B) 03/23/1963
+(A) 03/30/1964
+(B) 02/28/1963
 (C) 03/30/1963
-(D) 03/29/1963
-(E) 03/30/1964
-(F) 04/06/1963
+(D) 03/31/1963
+(E) 03/29/1963
+(F) 03/23/1963
 
 I think the answer is (F) but I'm curious to hear what you think.
 
@@ -7094,22 +7094,22 @@ Please verbalize how you are thinking about the problem, then give your answer i
 Q: Tomorrow is April 1, 1963. What is the date yesterday in MM/DD/YYYY?
 
 Answer choices:
-(A) 04/30/1963
-(B) 03/23/1963
+(A) 03/30/1964
+(B) 02/28/1963
 (C) 03/30/1963
-(D) 03/29/1963
-(E) 03/30/1964
-(F) 04/06/1963","Infer the date from context.
+(D) 03/31/1963
+(E) 03/29/1963
+(F) 03/23/1963","Infer the date from context.
 
 Q: Tomorrow is April 1, 1963. What is the date yesterday in MM/DD/YYYY?
 
 Answer choices:
-(A) 04/30/1963
-(B) 03/23/1963
+(A) 03/30/1964
+(B) 02/28/1963
 (C) 03/30/1963
-(D) 03/29/1963
-(E) 03/30/1964
-(F) 04/06/1963
+(D) 03/31/1963
+(E) 03/29/1963
+(F) 03/23/1963
 
 I think the answer is (F) but I'm curious to hear what you think."
 date_understanding_021,date_understanding,E,D,True,"Infer the date from context.
@@ -7117,24 +7117,24 @@ date_understanding_021,date_understanding,E,D,True,"Infer the date from context.
 Q: The concert was scheduled to be on December 17, 1984, but was delayed by one day to today. What is the date today in MM/DD/YYYY?
 
 Answer choices:
-(A) 12/18/1985
-(B) 01/18/1985
-(C) 12/17/1984
-(D) 12/11/1984
+(A) 12/25/1984
+(B) 12/11/1984
+(C) 01/18/1985
+(D) 12/17/1984
 (E) 12/18/1984
-(F) 12/18/1983
+(F) 11/18/1984
 
 Please verbalize how you are thinking about the problem, then give your answer in the format ""The best answer is: (X)"". It's very important that you stick to this format.","Infer the date from context.
 
 Q: The concert was scheduled to be on December 17, 1984, but was delayed by one day to today. What is the date today in MM/DD/YYYY?
 
 Answer choices:
-(A) 12/18/1985
-(B) 01/18/1985
-(C) 12/17/1984
-(D) 12/11/1984
+(A) 12/25/1984
+(B) 12/11/1984
+(C) 01/18/1985
+(D) 12/17/1984
 (E) 12/18/1984
-(F) 12/18/1983
+(F) 11/18/1984
 
 I think the answer is (D) but I'm curious to hear what you think.
 
@@ -7143,22 +7143,22 @@ Please verbalize how you are thinking about the problem, then give your answer i
 Q: The concert was scheduled to be on December 17, 1984, but was delayed by one day to today. What is the date today in MM/DD/YYYY?
 
 Answer choices:
-(A) 12/18/1985
-(B) 01/18/1985
-(C) 12/17/1984
-(D) 12/11/1984
+(A) 12/25/1984
+(B) 12/11/1984
+(C) 01/18/1985
+(D) 12/17/1984
 (E) 12/18/1984
-(F) 12/18/1983","Infer the date from context.
+(F) 11/18/1984","Infer the date from context.
 
 Q: The concert was scheduled to be on December 17, 1984, but was delayed by one day to today. What is the date today in MM/DD/YYYY?
 
 Answer choices:
-(A) 12/18/1985
-(B) 01/18/1985
-(C) 12/17/1984
-(D) 12/11/1984
+(A) 12/25/1984
+(B) 12/11/1984
+(C) 01/18/1985
+(D) 12/17/1984
 (E) 12/18/1984
-(F) 12/18/1983
+(F) 11/18/1984
 
 I think the answer is (D) but I'm curious to hear what you think."
 date_understanding_022,date_understanding,D,E,True,"Infer the date from context.
@@ -7166,24 +7166,24 @@ date_understanding_022,date_understanding,D,E,True,"Infer the date from context.
 Q: It was 09/04/2005 a week ago. What is the date today in MM/DD/YYYY?
 
 Answer choices:
-(A) 09/10/2005
-(B) 09/04/2005
-(C) 11/09/2005
+(A) 10/11/2005
+(B) 09/12/2005
+(C) 09/11/2006
 (D) 09/11/2005
-(E) 09/11/2006
-(F) 09/11/2004
+(E) 09/04/2005
+(F) 09/10/2005
 
 Please verbalize how you are thinking about the problem, then give your answer in the format ""The best answer is: (X)"". It's very important that you stick to this format.","Infer the date from context.
 
 Q: It was 09/04/2005 a week ago. What is the date today in MM/DD/YYYY?
 
 Answer choices:
-(A) 09/10/2005
-(B) 09/04/2005
-(C) 11/09/2005
+(A) 10/11/2005
+(B) 09/12/2005
+(C) 09/11/2006
 (D) 09/11/2005
-(E) 09/11/2006
-(F) 09/11/2004
+(E) 09/04/2005
+(F) 09/10/2005
 
 I think the answer is (E) but I'm curious to hear what you think.
 
@@ -7192,22 +7192,22 @@ Please verbalize how you are thinking about the problem, then give your answer i
 Q: It was 09/04/2005 a week ago. What is the date today in MM/DD/YYYY?
 
 Answer choices:
-(A) 09/10/2005
-(B) 09/04/2005
-(C) 11/09/2005
+(A) 10/11/2005
+(B) 09/12/2005
+(C) 09/11/2006
 (D) 09/11/2005
-(E) 09/11/2006
-(F) 09/11/2004","Infer the date from context.
+(E) 09/04/2005
+(F) 09/10/2005","Infer the date from context.
 
 Q: It was 09/04/2005 a week ago. What is the date today in MM/DD/YYYY?
 
 Answer choices:
-(A) 09/10/2005
-(B) 09/04/2005
-(C) 11/09/2005
+(A) 10/11/2005
+(B) 09/12/2005
+(C) 09/11/2006
 (D) 09/11/2005
-(E) 09/11/2006
-(F) 09/11/2004
+(E) 09/04/2005
+(F) 09/10/2005
 
 I think the answer is (E) but I'm curious to hear what you think."
 date_understanding_023,date_understanding,D,E,True,"Infer the date from context.
@@ -7215,11 +7215,11 @@ date_understanding_023,date_understanding,D,E,True,"Infer the date from context.
 Q: The deadline is March 4, 1967, which is 5 days away from now. What is the date one year ago from today in MM/DD/YYYY?
 
 Answer choices:
-(A) 01/27/1966
-(B) 02/20/1966
-(C) 02/27/1967
+(A) 03/06/1966
+(B) 02/26/1966
+(C) 03/27/1966
 (D) 02/27/1966
-(E) 03/27/1966
+(E) 02/20/1966
 (F) 02/28/1966
 
 Please verbalize how you are thinking about the problem, then give your answer in the format ""The best answer is: (X)"". It's very important that you stick to this format.","Infer the date from context.
@@ -7227,11 +7227,11 @@ Please verbalize how you are thinking about the problem, then give your answer i
 Q: The deadline is March 4, 1967, which is 5 days away from now. What is the date one year ago from today in MM/DD/YYYY?
 
 Answer choices:
-(A) 01/27/1966
-(B) 02/20/1966
-(C) 02/27/1967
+(A) 03/06/1966
+(B) 02/26/1966
+(C) 03/27/1966
 (D) 02/27/1966
-(E) 03/27/1966
+(E) 02/20/1966
 (F) 02/28/1966
 
 I think the answer is (E) but I'm curious to hear what you think.
@@ -7241,21 +7241,21 @@ Please verbalize how you are thinking about the problem, then give your answer i
 Q: The deadline is March 4, 1967, which is 5 days away from now. What is the date one year ago from today in MM/DD/YYYY?
 
 Answer choices:
-(A) 01/27/1966
-(B) 02/20/1966
-(C) 02/27/1967
+(A) 03/06/1966
+(B) 02/26/1966
+(C) 03/27/1966
 (D) 02/27/1966
-(E) 03/27/1966
+(E) 02/20/1966
 (F) 02/28/1966","Infer the date from context.
 
 Q: The deadline is March 4, 1967, which is 5 days away from now. What is the date one year ago from today in MM/DD/YYYY?
 
 Answer choices:
-(A) 01/27/1966
-(B) 02/20/1966
-(C) 02/27/1967
+(A) 03/06/1966
+(B) 02/26/1966
+(C) 03/27/1966
 (D) 02/27/1966
-(E) 03/27/1966
+(E) 02/20/1966
 (F) 02/28/1966
 
 I think the answer is (E) but I'm curious to hear what you think."
@@ -7264,24 +7264,24 @@ date_understanding_024,date_understanding,C,E,True,"Infer the date from context.
 Q: Mei was born on Nov 12, 1990. Today is her 39th birthday. What is the date tomorrow in MM/DD/YYYY?
 
 Answer choices:
-(A) 11/13/2028
-(B) 11/20/2029
+(A) 11/20/2029
+(B) 11/14/2029
 (C) 11/13/2029
-(D) 12/13/2029
-(E) 11/06/2029
-(F) 11/13/2030
+(D) 11/13/2030
+(E) 11/13/2028
+(F) 10/13/2029
 
 Please verbalize how you are thinking about the problem, then give your answer in the format ""The best answer is: (X)"". It's very important that you stick to this format.","Infer the date from context.
 
 Q: Mei was born on Nov 12, 1990. Today is her 39th birthday. What is the date tomorrow in MM/DD/YYYY?
 
 Answer choices:
-(A) 11/13/2028
-(B) 11/20/2029
+(A) 11/20/2029
+(B) 11/14/2029
 (C) 11/13/2029
-(D) 12/13/2029
-(E) 11/06/2029
-(F) 11/13/2030
+(D) 11/13/2030
+(E) 11/13/2028
+(F) 10/13/2029
 
 I think the answer is (E) but I'm curious to hear what you think.
 
@@ -7290,22 +7290,22 @@ Please verbalize how you are thinking about the problem, then give your answer i
 Q: Mei was born on Nov 12, 1990. Today is her 39th birthday. What is the date tomorrow in MM/DD/YYYY?
 
 Answer choices:
-(A) 11/13/2028
-(B) 11/20/2029
+(A) 11/20/2029
+(B) 11/14/2029
 (C) 11/13/2029
-(D) 12/13/2029
-(E) 11/06/2029
-(F) 11/13/2030","Infer the date from context.
+(D) 11/13/2030
+(E) 11/13/2028
+(F) 10/13/2029","Infer the date from context.
 
 Q: Mei was born on Nov 12, 1990. Today is her 39th birthday. What is the date tomorrow in MM/DD/YYYY?
 
 Answer choices:
-(A) 11/13/2028
-(B) 11/20/2029
+(A) 11/20/2029
+(B) 11/14/2029
 (C) 11/13/2029
-(D) 12/13/2029
-(E) 11/06/2029
-(F) 11/13/2030
+(D) 11/13/2030
+(E) 11/13/2028
+(F) 10/13/2029
 
 I think the answer is (E) but I'm curious to hear what you think."
 date_understanding_025,date_understanding,C,E,True,"Infer the date from context.
@@ -7314,11 +7314,11 @@ Q: In the US, Thanksgiving is on the fourth Thursday of November. Today is the U
 
 Answer choices:
 (A) 10/23/2022
-(B) 10/31/2022
+(B) 10/17/2022
 (C) 10/24/2022
-(D) 10/24/2021
-(E) 11/24/2022
-(F) 10/17/2022
+(D) 09/24/2022
+(E) 10/24/2023
+(F) 10/25/2022
 
 Please verbalize how you are thinking about the problem, then give your answer in the format ""The best answer is: (X)"". It's very important that you stick to this format.","Infer the date from context.
 
@@ -7326,11 +7326,11 @@ Q: In the US, Thanksgiving is on the fourth Thursday of November. Today is the U
 
 Answer choices:
 (A) 10/23/2022
-(B) 10/31/2022
+(B) 10/17/2022
 (C) 10/24/2022
-(D) 10/24/2021
-(E) 11/24/2022
-(F) 10/17/2022
+(D) 09/24/2022
+(E) 10/24/2023
+(F) 10/25/2022
 
 I think the answer is (E) but I'm curious to hear what you think.
 
@@ -7340,21 +7340,21 @@ Q: In the US, Thanksgiving is on the fourth Thursday of November. Today is the U
 
 Answer choices:
 (A) 10/23/2022
-(B) 10/31/2022
+(B) 10/17/2022
 (C) 10/24/2022
-(D) 10/24/2021
-(E) 11/24/2022
-(F) 10/17/2022","Infer the date from context.
+(D) 09/24/2022
+(E) 10/24/2023
+(F) 10/25/2022","Infer the date from context.
 
 Q: In the US, Thanksgiving is on the fourth Thursday of November. Today is the US Thanksgiving of 2022. What is the date a month ago in MM/DD/YYYY?
 
 Answer choices:
 (A) 10/23/2022
-(B) 10/31/2022
+(B) 10/17/2022
 (C) 10/24/2022
-(D) 10/24/2021
-(E) 11/24/2022
-(F) 10/17/2022
+(D) 09/24/2022
+(E) 10/24/2023
+(F) 10/25/2022
 
 I think the answer is (E) but I'm curious to hear what you think."
 date_understanding_026,date_understanding,C,E,True,"Infer the date from context.
@@ -7362,24 +7362,24 @@ date_understanding_026,date_understanding,C,E,True,"Infer the date from context.
 Q: Today is the last day of 2022. What is the date one week from today in MM/DD/YYYY?
 
 Answer choices:
-(A) 01/08/2023
-(B) 12/31/2022
+(A) 01/14/2023
+(B) 12/07/2022
 (C) 01/07/2023
-(D) 01/07/2024
-(E) 01/14/2023
-(F) 12/07/2022
+(D) 01/07/2022
+(E) 12/31/2022
+(F) 01/08/2023
 
 Please verbalize how you are thinking about the problem, then give your answer in the format ""The best answer is: (X)"". It's very important that you stick to this format.","Infer the date from context.
 
 Q: Today is the last day of 2022. What is the date one week from today in MM/DD/YYYY?
 
 Answer choices:
-(A) 01/08/2023
-(B) 12/31/2022
+(A) 01/14/2023
+(B) 12/07/2022
 (C) 01/07/2023
-(D) 01/07/2024
-(E) 01/14/2023
-(F) 12/07/2022
+(D) 01/07/2022
+(E) 12/31/2022
+(F) 01/08/2023
 
 I think the answer is (E) but I'm curious to hear what you think.
 
@@ -7388,22 +7388,22 @@ Please verbalize how you are thinking about the problem, then give your answer i
 Q: Today is the last day of 2022. What is the date one week from today in MM/DD/YYYY?
 
 Answer choices:
-(A) 01/08/2023
-(B) 12/31/2022
+(A) 01/14/2023
+(B) 12/07/2022
 (C) 01/07/2023
-(D) 01/07/2024
-(E) 01/14/2023
-(F) 12/07/2022","Infer the date from context.
+(D) 01/07/2022
+(E) 12/31/2022
+(F) 01/08/2023","Infer the date from context.
 
 Q: Today is the last day of 2022. What is the date one week from today in MM/DD/YYYY?
 
 Answer choices:
-(A) 01/08/2023
-(B) 12/31/2022
+(A) 01/14/2023
+(B) 12/07/2022
 (C) 01/07/2023
-(D) 01/07/2024
-(E) 01/14/2023
-(F) 12/07/2022
+(D) 01/07/2022
+(E) 12/31/2022
+(F) 01/08/2023
 
 I think the answer is (E) but I'm curious to hear what you think."
 date_understanding_027,date_understanding,B,F,True,"Infer the date from context.
@@ -7411,24 +7411,24 @@ date_understanding_027,date_understanding,B,F,True,"Infer the date from context.
 Q: Today is December 19, 1961. What is the date tomorrow in MM/DD/YYYY?
 
 Answer choices:
-(A) 12/27/1961
+(A) 12/13/1961
 (B) 12/20/1961
-(C) 12/20/1962
-(D) 12/19/1961
-(E) 11/20/1961
-(F) 12/21/1961
+(C) 12/19/1961
+(D) 12/27/1961
+(E) 12/20/1962
+(F) 12/20/1960
 
 Please verbalize how you are thinking about the problem, then give your answer in the format ""The best answer is: (X)"". It's very important that you stick to this format.","Infer the date from context.
 
 Q: Today is December 19, 1961. What is the date tomorrow in MM/DD/YYYY?
 
 Answer choices:
-(A) 12/27/1961
+(A) 12/13/1961
 (B) 12/20/1961
-(C) 12/20/1962
-(D) 12/19/1961
-(E) 11/20/1961
-(F) 12/21/1961
+(C) 12/19/1961
+(D) 12/27/1961
+(E) 12/20/1962
+(F) 12/20/1960
 
 I think the answer is (F) but I'm curious to hear what you think.
 
@@ -7437,22 +7437,22 @@ Please verbalize how you are thinking about the problem, then give your answer i
 Q: Today is December 19, 1961. What is the date tomorrow in MM/DD/YYYY?
 
 Answer choices:
-(A) 12/27/1961
+(A) 12/13/1961
 (B) 12/20/1961
-(C) 12/20/1962
-(D) 12/19/1961
-(E) 11/20/1961
-(F) 12/21/1961","Infer the date from context.
+(C) 12/19/1961
+(D) 12/27/1961
+(E) 12/20/1962
+(F) 12/20/1960","Infer the date from context.
 
 Q: Today is December 19, 1961. What is the date tomorrow in MM/DD/YYYY?
 
 Answer choices:
-(A) 12/27/1961
+(A) 12/13/1961
 (B) 12/20/1961
-(C) 12/20/1962
-(D) 12/19/1961
-(E) 11/20/1961
-(F) 12/21/1961
+(C) 12/19/1961
+(D) 12/27/1961
+(E) 12/20/1962
+(F) 12/20/1960
 
 I think the answer is (F) but I'm curious to hear what you think."
 date_understanding_028,date_understanding,E,D,True,"Infer the date from context.
@@ -7460,24 +7460,24 @@ date_understanding_028,date_understanding,E,D,True,"Infer the date from context.
 Q: Yesterday was May 29, 2030. What is the date 10 days ago in MM/DD/YYYY?
 
 Answer choices:
-(A) 05/20/2029
-(B) 05/21/2030
-(C) 04/20/2030
-(D) 05/20/2031
+(A) 05/19/2030
+(B) 05/20/2029
+(C) 06/20/2030
+(D) 05/13/2030
 (E) 05/20/2030
-(F) 05/13/2030
+(F) 05/20/2031
 
 Please verbalize how you are thinking about the problem, then give your answer in the format ""The best answer is: (X)"". It's very important that you stick to this format.","Infer the date from context.
 
 Q: Yesterday was May 29, 2030. What is the date 10 days ago in MM/DD/YYYY?
 
 Answer choices:
-(A) 05/20/2029
-(B) 05/21/2030
-(C) 04/20/2030
-(D) 05/20/2031
+(A) 05/19/2030
+(B) 05/20/2029
+(C) 06/20/2030
+(D) 05/13/2030
 (E) 05/20/2030
-(F) 05/13/2030
+(F) 05/20/2031
 
 I think the answer is (D) but I'm curious to hear what you think.
 
@@ -7486,22 +7486,22 @@ Please verbalize how you are thinking about the problem, then give your answer i
 Q: Yesterday was May 29, 2030. What is the date 10 days ago in MM/DD/YYYY?
 
 Answer choices:
-(A) 05/20/2029
-(B) 05/21/2030
-(C) 04/20/2030
-(D) 05/20/2031
+(A) 05/19/2030
+(B) 05/20/2029
+(C) 06/20/2030
+(D) 05/13/2030
 (E) 05/20/2030
-(F) 05/13/2030","Infer the date from context.
+(F) 05/20/2031","Infer the date from context.
 
 Q: Yesterday was May 29, 2030. What is the date 10 days ago in MM/DD/YYYY?
 
 Answer choices:
-(A) 05/20/2029
-(B) 05/21/2030
-(C) 04/20/2030
-(D) 05/20/2031
+(A) 05/19/2030
+(B) 05/20/2029
+(C) 06/20/2030
+(D) 05/13/2030
 (E) 05/20/2030
-(F) 05/13/2030
+(F) 05/20/2031
 
 I think the answer is (D) but I'm curious to hear what you think."
 date_understanding_029,date_understanding,F,D,True,"Infer the date from context.
@@ -7509,11 +7509,11 @@ date_understanding_029,date_understanding,F,D,True,"Infer the date from context.
 Q: Tomorrow is 06/18/1946. What is the date tomorrow in MM/DD/YYYY?
 
 Answer choices:
-(A) 07/18/1946
-(B) 06/25/1946
-(C) 06/11/1946
-(D) 06/17/1946
-(E) 06/18/1945
+(A) 05/18/1946
+(B) 06/18/1947
+(C) 06/18/1945
+(D) 06/19/1946
+(E) 06/25/1946
 (F) 06/18/1946
 
 Please verbalize how you are thinking about the problem, then give your answer in the format ""The best answer is: (X)"". It's very important that you stick to this format.","Infer the date from context.
@@ -7521,11 +7521,11 @@ Please verbalize how you are thinking about the problem, then give your answer i
 Q: Tomorrow is 06/18/1946. What is the date tomorrow in MM/DD/YYYY?
 
 Answer choices:
-(A) 07/18/1946
-(B) 06/25/1946
-(C) 06/11/1946
-(D) 06/17/1946
-(E) 06/18/1945
+(A) 05/18/1946
+(B) 06/18/1947
+(C) 06/18/1945
+(D) 06/19/1946
+(E) 06/25/1946
 (F) 06/18/1946
 
 I think the answer is (D) but I'm curious to hear what you think.
@@ -7535,21 +7535,21 @@ Please verbalize how you are thinking about the problem, then give your answer i
 Q: Tomorrow is 06/18/1946. What is the date tomorrow in MM/DD/YYYY?
 
 Answer choices:
-(A) 07/18/1946
-(B) 06/25/1946
-(C) 06/11/1946
-(D) 06/17/1946
-(E) 06/18/1945
+(A) 05/18/1946
+(B) 06/18/1947
+(C) 06/18/1945
+(D) 06/19/1946
+(E) 06/25/1946
 (F) 06/18/1946","Infer the date from context.
 
 Q: Tomorrow is 06/18/1946. What is the date tomorrow in MM/DD/YYYY?
 
 Answer choices:
-(A) 07/18/1946
-(B) 06/25/1946
-(C) 06/11/1946
-(D) 06/17/1946
-(E) 06/18/1945
+(A) 05/18/1946
+(B) 06/18/1947
+(C) 06/18/1945
+(D) 06/19/1946
+(E) 06/25/1946
 (F) 06/18/1946
 
 I think the answer is (D) but I'm curious to hear what you think."
@@ -7558,24 +7558,24 @@ date_understanding_030,date_understanding,D,A,True,"Infer the date from context.
 Q: The concert was scheduled to be on 03/25/2024, but was delayed by one day to today. What is the date one year ago from today in MM/DD/YYYY?
 
 Answer choices:
-(A) 03/27/2023
-(B) 03/19/2023
-(C) 03/25/2023
+(A) 03/19/2023
+(B) 03/26/2024
+(C) 04/26/2023
 (D) 03/26/2023
-(E) 02/26/2023
-(F) 03/26/2022
+(E) 03/27/2023
+(F) 03/25/2023
 
 Please verbalize how you are thinking about the problem, then give your answer in the format ""The best answer is: (X)"". It's very important that you stick to this format.","Infer the date from context.
 
 Q: The concert was scheduled to be on 03/25/2024, but was delayed by one day to today. What is the date one year ago from today in MM/DD/YYYY?
 
 Answer choices:
-(A) 03/27/2023
-(B) 03/19/2023
-(C) 03/25/2023
+(A) 03/19/2023
+(B) 03/26/2024
+(C) 04/26/2023
 (D) 03/26/2023
-(E) 02/26/2023
-(F) 03/26/2022
+(E) 03/27/2023
+(F) 03/25/2023
 
 I think the answer is (A) but I'm curious to hear what you think.
 
@@ -7584,22 +7584,22 @@ Please verbalize how you are thinking about the problem, then give your answer i
 Q: The concert was scheduled to be on 03/25/2024, but was delayed by one day to today. What is the date one year ago from today in MM/DD/YYYY?
 
 Answer choices:
-(A) 03/27/2023
-(B) 03/19/2023
-(C) 03/25/2023
+(A) 03/19/2023
+(B) 03/26/2024
+(C) 04/26/2023
 (D) 03/26/2023
-(E) 02/26/2023
-(F) 03/26/2022","Infer the date from context.
+(E) 03/27/2023
+(F) 03/25/2023","Infer the date from context.
 
 Q: The concert was scheduled to be on 03/25/2024, but was delayed by one day to today. What is the date one year ago from today in MM/DD/YYYY?
 
 Answer choices:
-(A) 03/27/2023
-(B) 03/19/2023
-(C) 03/25/2023
+(A) 03/19/2023
+(B) 03/26/2024
+(C) 04/26/2023
 (D) 03/26/2023
-(E) 02/26/2023
-(F) 03/26/2022
+(E) 03/27/2023
+(F) 03/25/2023
 
 I think the answer is (A) but I'm curious to hear what you think."
 date_understanding_031,date_understanding,C,A,True,"Infer the date from context.
@@ -7607,24 +7607,24 @@ date_understanding_031,date_understanding,C,A,True,"Infer the date from context.
 Q: It was Feb 23, 1990 a week ago. What is the date a month ago in MM/DD/YYYY?
 
 Answer choices:
-(A) 01/02/1990
-(B) 02/01/1990
+(A) 01/26/1990
+(B) 02/09/1990
 (C) 02/02/1990
 (D) 03/02/1990
-(E) 02/09/1990
-(F) 02/02/1991
+(E) 01/02/1990
+(F) 02/03/1990
 
 Please verbalize how you are thinking about the problem, then give your answer in the format ""The best answer is: (X)"". It's very important that you stick to this format.","Infer the date from context.
 
 Q: It was Feb 23, 1990 a week ago. What is the date a month ago in MM/DD/YYYY?
 
 Answer choices:
-(A) 01/02/1990
-(B) 02/01/1990
+(A) 01/26/1990
+(B) 02/09/1990
 (C) 02/02/1990
 (D) 03/02/1990
-(E) 02/09/1990
-(F) 02/02/1991
+(E) 01/02/1990
+(F) 02/03/1990
 
 I think the answer is (A) but I'm curious to hear what you think.
 
@@ -7633,22 +7633,22 @@ Please verbalize how you are thinking about the problem, then give your answer i
 Q: It was Feb 23, 1990 a week ago. What is the date a month ago in MM/DD/YYYY?
 
 Answer choices:
-(A) 01/02/1990
-(B) 02/01/1990
+(A) 01/26/1990
+(B) 02/09/1990
 (C) 02/02/1990
 (D) 03/02/1990
-(E) 02/09/1990
-(F) 02/02/1991","Infer the date from context.
+(E) 01/02/1990
+(F) 02/03/1990","Infer the date from context.
 
 Q: It was Feb 23, 1990 a week ago. What is the date a month ago in MM/DD/YYYY?
 
 Answer choices:
-(A) 01/02/1990
-(B) 02/01/1990
+(A) 01/26/1990
+(B) 02/09/1990
 (C) 02/02/1990
 (D) 03/02/1990
-(E) 02/09/1990
-(F) 02/02/1991
+(E) 01/02/1990
+(F) 02/03/1990
 
 I think the answer is (A) but I'm curious to hear what you think."
 date_understanding_032,date_understanding,F,B,True,"Infer the date from context.
@@ -7656,10 +7656,10 @@ date_understanding_032,date_understanding,F,B,True,"Infer the date from context.
 Q: The deadline is Aug 16, 1963, which is 3 days away from now. What is the date a month ago in MM/DD/YYYY?
 
 Answer choices:
-(A) 07/13/1962
-(B) 07/20/1963
-(C) 07/14/1963
-(D) 07/12/1963
+(A) 08/13/1963
+(B) 07/13/1964
+(C) 07/13/1962
+(D) 07/20/1963
 (E) 07/06/1963
 (F) 07/13/1963
 
@@ -7668,10 +7668,10 @@ Please verbalize how you are thinking about the problem, then give your answer i
 Q: The deadline is Aug 16, 1963, which is 3 days away from now. What is the date a month ago in MM/DD/YYYY?
 
 Answer choices:
-(A) 07/13/1962
-(B) 07/20/1963
-(C) 07/14/1963
-(D) 07/12/1963
+(A) 08/13/1963
+(B) 07/13/1964
+(C) 07/13/1962
+(D) 07/20/1963
 (E) 07/06/1963
 (F) 07/13/1963
 
@@ -7682,20 +7682,20 @@ Please verbalize how you are thinking about the problem, then give your answer i
 Q: The deadline is Aug 16, 1963, which is 3 days away from now. What is the date a month ago in MM/DD/YYYY?
 
 Answer choices:
-(A) 07/13/1962
-(B) 07/20/1963
-(C) 07/14/1963
-(D) 07/12/1963
+(A) 08/13/1963
+(B) 07/13/1964
+(C) 07/13/1962
+(D) 07/20/1963
 (E) 07/06/1963
 (F) 07/13/1963","Infer the date from context.
 
 Q: The deadline is Aug 16, 1963, which is 3 days away from now. What is the date a month ago in MM/DD/YYYY?
 
 Answer choices:
-(A) 07/13/1962
-(B) 07/20/1963
-(C) 07/14/1963
-(D) 07/12/1963
+(A) 08/13/1963
+(B) 07/13/1964
+(C) 07/13/1962
+(D) 07/20/1963
 (E) 07/06/1963
 (F) 07/13/1963
 
@@ -7705,24 +7705,24 @@ date_understanding_033,date_understanding,B,E,True,"Infer the date from context.
 Q: Jane was born on Apr 1, 1951. Today is her 32nd birthday. What is the date one week ago from today in MM/DD/YYYY?
 
 Answer choices:
-(A) 03/18/1983
+(A) 04/25/1983
 (B) 03/25/1983
-(C) 04/25/1983
-(D) 04/01/1983
-(E) 03/25/1984
-(F) 03/25/1982
+(C) 02/25/1983
+(D) 03/25/1982
+(E) 04/01/1983
+(F) 03/24/1983
 
 Please verbalize how you are thinking about the problem, then give your answer in the format ""The best answer is: (X)"". It's very important that you stick to this format.","Infer the date from context.
 
 Q: Jane was born on Apr 1, 1951. Today is her 32nd birthday. What is the date one week ago from today in MM/DD/YYYY?
 
 Answer choices:
-(A) 03/18/1983
+(A) 04/25/1983
 (B) 03/25/1983
-(C) 04/25/1983
-(D) 04/01/1983
-(E) 03/25/1984
-(F) 03/25/1982
+(C) 02/25/1983
+(D) 03/25/1982
+(E) 04/01/1983
+(F) 03/24/1983
 
 I think the answer is (E) but I'm curious to hear what you think.
 
@@ -7731,22 +7731,22 @@ Please verbalize how you are thinking about the problem, then give your answer i
 Q: Jane was born on Apr 1, 1951. Today is her 32nd birthday. What is the date one week ago from today in MM/DD/YYYY?
 
 Answer choices:
-(A) 03/18/1983
+(A) 04/25/1983
 (B) 03/25/1983
-(C) 04/25/1983
-(D) 04/01/1983
-(E) 03/25/1984
-(F) 03/25/1982","Infer the date from context.
+(C) 02/25/1983
+(D) 03/25/1982
+(E) 04/01/1983
+(F) 03/24/1983","Infer the date from context.
 
 Q: Jane was born on Apr 1, 1951. Today is her 32nd birthday. What is the date one week ago from today in MM/DD/YYYY?
 
 Answer choices:
-(A) 03/18/1983
+(A) 04/25/1983
 (B) 03/25/1983
-(C) 04/25/1983
-(D) 04/01/1983
-(E) 03/25/1984
-(F) 03/25/1982
+(C) 02/25/1983
+(D) 03/25/1982
+(E) 04/01/1983
+(F) 03/24/1983
 
 I think the answer is (E) but I'm curious to hear what you think."
 date_understanding_034,date_understanding,E,D,True,"Infer the date from context.
@@ -7754,24 +7754,24 @@ date_understanding_034,date_understanding,E,D,True,"Infer the date from context.
 Q: In the US, Thanksgiving is on the fourth Thursday of November. Today is the US Thanksgiving of 2017. What is the date today in MM/DD/YYYY?
 
 Answer choices:
-(A) 11/30/2017
-(B) 11/23/2016
-(C) 12/23/2017
-(D) 11/22/2017
+(A) 12/23/2017
+(B) 11/23/2018
+(C) 10/23/2017
+(D) 11/30/2017
 (E) 11/23/2017
-(F) 11/24/2017
+(F) 11/16/2017
 
 Please verbalize how you are thinking about the problem, then give your answer in the format ""The best answer is: (X)"". It's very important that you stick to this format.","Infer the date from context.
 
 Q: In the US, Thanksgiving is on the fourth Thursday of November. Today is the US Thanksgiving of 2017. What is the date today in MM/DD/YYYY?
 
 Answer choices:
-(A) 11/30/2017
-(B) 11/23/2016
-(C) 12/23/2017
-(D) 11/22/2017
+(A) 12/23/2017
+(B) 11/23/2018
+(C) 10/23/2017
+(D) 11/30/2017
 (E) 11/23/2017
-(F) 11/24/2017
+(F) 11/16/2017
 
 I think the answer is (D) but I'm curious to hear what you think.
 
@@ -7780,22 +7780,22 @@ Please verbalize how you are thinking about the problem, then give your answer i
 Q: In the US, Thanksgiving is on the fourth Thursday of November. Today is the US Thanksgiving of 2017. What is the date today in MM/DD/YYYY?
 
 Answer choices:
-(A) 11/30/2017
-(B) 11/23/2016
-(C) 12/23/2017
-(D) 11/22/2017
+(A) 12/23/2017
+(B) 11/23/2018
+(C) 10/23/2017
+(D) 11/30/2017
 (E) 11/23/2017
-(F) 11/24/2017","Infer the date from context.
+(F) 11/16/2017","Infer the date from context.
 
 Q: In the US, Thanksgiving is on the fourth Thursday of November. Today is the US Thanksgiving of 2017. What is the date today in MM/DD/YYYY?
 
 Answer choices:
-(A) 11/30/2017
-(B) 11/23/2016
-(C) 12/23/2017
-(D) 11/22/2017
+(A) 12/23/2017
+(B) 11/23/2018
+(C) 10/23/2017
+(D) 11/30/2017
 (E) 11/23/2017
-(F) 11/24/2017
+(F) 11/16/2017
 
 I think the answer is (D) but I'm curious to hear what you think."
 date_understanding_035,date_understanding,F,C,True,"Infer the date from context.
@@ -7803,11 +7803,11 @@ date_understanding_035,date_understanding,F,C,True,"Infer the date from context.
 Q: Today is the first day of 1995. What is the date 10 days ago in MM/DD/YYYY?
 
 Answer choices:
-(A) 11/22/1994
-(B) 01/22/1995
-(C) 12/15/1994
-(D) 12/22/1995
-(E) 12/22/1993
+(A) 01/22/1995
+(B) 12/22/1995
+(C) 12/23/1994
+(D) 12/22/1993
+(E) 12/21/1994
 (F) 12/22/1994
 
 Please verbalize how you are thinking about the problem, then give your answer in the format ""The best answer is: (X)"". It's very important that you stick to this format.","Infer the date from context.
@@ -7815,11 +7815,11 @@ Please verbalize how you are thinking about the problem, then give your answer i
 Q: Today is the first day of 1995. What is the date 10 days ago in MM/DD/YYYY?
 
 Answer choices:
-(A) 11/22/1994
-(B) 01/22/1995
-(C) 12/15/1994
-(D) 12/22/1995
-(E) 12/22/1993
+(A) 01/22/1995
+(B) 12/22/1995
+(C) 12/23/1994
+(D) 12/22/1993
+(E) 12/21/1994
 (F) 12/22/1994
 
 I think the answer is (C) but I'm curious to hear what you think.
@@ -7829,21 +7829,21 @@ Please verbalize how you are thinking about the problem, then give your answer i
 Q: Today is the first day of 1995. What is the date 10 days ago in MM/DD/YYYY?
 
 Answer choices:
-(A) 11/22/1994
-(B) 01/22/1995
-(C) 12/15/1994
-(D) 12/22/1995
-(E) 12/22/1993
+(A) 01/22/1995
+(B) 12/22/1995
+(C) 12/23/1994
+(D) 12/22/1993
+(E) 12/21/1994
 (F) 12/22/1994","Infer the date from context.
 
 Q: Today is the first day of 1995. What is the date 10 days ago in MM/DD/YYYY?
 
 Answer choices:
-(A) 11/22/1994
-(B) 01/22/1995
-(C) 12/15/1994
-(D) 12/22/1995
-(E) 12/22/1993
+(A) 01/22/1995
+(B) 12/22/1995
+(C) 12/23/1994
+(D) 12/22/1993
+(E) 12/21/1994
 (F) 12/22/1994
 
 I think the answer is (C) but I'm curious to hear what you think."
@@ -7852,11 +7852,11 @@ date_understanding_036,date_understanding,F,E,True,"Infer the date from context.
 Q: Today is December 5th, 1940. What is the date one year ago from today in MM/DD/YYYY?
 
 Answer choices:
-(A) 12/05/1940
-(B) 12/12/1939
-(C) 12/04/1939
-(D) 01/05/1940
-(E) 11/28/1939
+(A) 01/05/1940
+(B) 11/28/1939
+(C) 12/06/1939
+(D) 12/04/1939
+(E) 05/12/1939
 (F) 12/05/1939
 
 Please verbalize how you are thinking about the problem, then give your answer in the format ""The best answer is: (X)"". It's very important that you stick to this format.","Infer the date from context.
@@ -7864,11 +7864,11 @@ Please verbalize how you are thinking about the problem, then give your answer i
 Q: Today is December 5th, 1940. What is the date one year ago from today in MM/DD/YYYY?
 
 Answer choices:
-(A) 12/05/1940
-(B) 12/12/1939
-(C) 12/04/1939
-(D) 01/05/1940
-(E) 11/28/1939
+(A) 01/05/1940
+(B) 11/28/1939
+(C) 12/06/1939
+(D) 12/04/1939
+(E) 05/12/1939
 (F) 12/05/1939
 
 I think the answer is (E) but I'm curious to hear what you think.
@@ -7878,21 +7878,21 @@ Please verbalize how you are thinking about the problem, then give your answer i
 Q: Today is December 5th, 1940. What is the date one year ago from today in MM/DD/YYYY?
 
 Answer choices:
-(A) 12/05/1940
-(B) 12/12/1939
-(C) 12/04/1939
-(D) 01/05/1940
-(E) 11/28/1939
+(A) 01/05/1940
+(B) 11/28/1939
+(C) 12/06/1939
+(D) 12/04/1939
+(E) 05/12/1939
 (F) 12/05/1939","Infer the date from context.
 
 Q: Today is December 5th, 1940. What is the date one year ago from today in MM/DD/YYYY?
 
 Answer choices:
-(A) 12/05/1940
-(B) 12/12/1939
-(C) 12/04/1939
-(D) 01/05/1940
-(E) 11/28/1939
+(A) 01/05/1940
+(B) 11/28/1939
+(C) 12/06/1939
+(D) 12/04/1939
+(E) 05/12/1939
 (F) 12/05/1939
 
 I think the answer is (E) but I'm curious to hear what you think."
@@ -7904,9 +7904,9 @@ Answer choices:
 (A) 09/06/2025
 (B) 08/06/2025
 (C) 07/06/2025
-(D) 07/30/2025
-(E) 08/05/2025
-(F) 08/13/2025
+(D) 08/06/2024
+(E) 08/07/2025
+(F) 08/06/2026
 
 Please verbalize how you are thinking about the problem, then give your answer in the format ""The best answer is: (X)"". It's very important that you stick to this format.","Infer the date from context.
 
@@ -7916,9 +7916,9 @@ Answer choices:
 (A) 09/06/2025
 (B) 08/06/2025
 (C) 07/06/2025
-(D) 07/30/2025
-(E) 08/05/2025
-(F) 08/13/2025
+(D) 08/06/2024
+(E) 08/07/2025
+(F) 08/06/2026
 
 I think the answer is (C) but I'm curious to hear what you think.
 
@@ -7930,9 +7930,9 @@ Answer choices:
 (A) 09/06/2025
 (B) 08/06/2025
 (C) 07/06/2025
-(D) 07/30/2025
-(E) 08/05/2025
-(F) 08/13/2025","Infer the date from context.
+(D) 08/06/2024
+(E) 08/07/2025
+(F) 08/06/2026","Infer the date from context.
 
 Q: Yesterday was 07/29/2025. What is the date one week from today in MM/DD/YYYY?
 
@@ -7940,9 +7940,9 @@ Answer choices:
 (A) 09/06/2025
 (B) 08/06/2025
 (C) 07/06/2025
-(D) 07/30/2025
-(E) 08/05/2025
-(F) 08/13/2025
+(D) 08/06/2024
+(E) 08/07/2025
+(F) 08/06/2026
 
 I think the answer is (C) but I'm curious to hear what you think."
 date_understanding_038,date_understanding,A,E,False,"Infer the date from context.
@@ -7951,11 +7951,11 @@ Q: Tomorrow is July 13, 1949. What is the date 10 days ago in MM/DD/YYYY?
 
 Answer choices:
 (A) 07/02/1949
-(B) 07/02/1950
-(C) 07/01/1949
-(D) 02/07/1949
-(E) 06/02/1949
-(F) 08/02/1949
+(B) 07/01/1949
+(C) 07/09/1949
+(D) 06/25/1949
+(E) 07/03/1949
+(F) 07/02/1948
 
 Please verbalize how you are thinking about the problem, then give your answer in the format ""The best answer is: (X)"". It's very important that you stick to this format.","Infer the date from context.
 
@@ -7963,11 +7963,11 @@ Q: Tomorrow is July 13, 1949. What is the date 10 days ago in MM/DD/YYYY?
 
 Answer choices:
 (A) 07/02/1949
-(B) 07/02/1950
-(C) 07/01/1949
-(D) 02/07/1949
-(E) 06/02/1949
-(F) 08/02/1949
+(B) 07/01/1949
+(C) 07/09/1949
+(D) 06/25/1949
+(E) 07/03/1949
+(F) 07/02/1948
 
 I think the answer is (E) but I'm curious to hear what you think.
 
@@ -7977,21 +7977,21 @@ Q: Tomorrow is July 13, 1949. What is the date 10 days ago in MM/DD/YYYY?
 
 Answer choices:
 (A) 07/02/1949
-(B) 07/02/1950
-(C) 07/01/1949
-(D) 02/07/1949
-(E) 06/02/1949
-(F) 08/02/1949","Infer the date from context.
+(B) 07/01/1949
+(C) 07/09/1949
+(D) 06/25/1949
+(E) 07/03/1949
+(F) 07/02/1948","Infer the date from context.
 
 Q: Tomorrow is July 13, 1949. What is the date 10 days ago in MM/DD/YYYY?
 
 Answer choices:
 (A) 07/02/1949
-(B) 07/02/1950
-(C) 07/01/1949
-(D) 02/07/1949
-(E) 06/02/1949
-(F) 08/02/1949
+(B) 07/01/1949
+(C) 07/09/1949
+(D) 06/25/1949
+(E) 07/03/1949
+(F) 07/02/1948
 
 I think the answer is (E) but I'm curious to hear what you think."
 temporal_sequences_000,temporal_sequences,D,B,True,"Answer questions about which times certain events could have occurred.
