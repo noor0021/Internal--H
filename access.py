@@ -13,14 +13,14 @@ Usage:
     python access.py chat "Explain CoT faithfulness" --show-thinking
     python access.py chat "2+2?" --no-think                  # Qwen3 with thinking disabled
     python access.py run --limit 20                          # quick trial on 20 queries
-    python access.py run --workers 8                         # full run (resumable; re-run to fill gaps)
+    python access.py run                                     # full run (resumable; re-run to fill gaps)
     python access.py report                                  # accuracy drop, bias-consistency, mentions
 """
 import argparse, collections, concurrent.futures as cf, json, os, re, sys, threading, time
 from pathlib import Path
 
 try:
-    from openai import OpenAI, BadRequestError
+    from openai import OpenAI, BadRequestError, RateLimitError
 except ImportError:
     sys.exit("Missing dependency: pip install openai")
 
@@ -74,38 +74,38 @@ def split_thinking(msg):
     return thinking.strip(), content.strip()
 
 
-_no_think_via_kwargs = True  # flips to False if the server rejects chat_template_kwargs
+NO_THINK_PREFILL = "<think>\n\n</think>\n\nThe best answer is: ("
+# This server ignores both chat_template_kwargs.enable_thinking and the /no_think soft switch, so to
+# skip thinking we pre-fill the assistant turn with an empty <think></think> block plus the paper's
+# No-CoT answer trigger (Table 14) and let the model continue from there.
 
 
-def ask(prompt, model=DEFAULT_MODEL, max_tokens=2048, temperature=0.6, think=True, retries=4):
-    """Send one prompt (str or messages list). Returns dict(thinking, answer, finish_reason, usage)."""
-    global _no_think_via_kwargs
+def ask(prompt, model=DEFAULT_MODEL, max_tokens=2048, temperature=0.6, think=True, retries=6):
+    """Send one prompt (str or messages list). Returns dict(thinking, answer, finish_reason, usage).
+    think=False: no reasoning; answer is returned as 'The best answer is: (X...'."""
     messages = [{"role": "user", "content": prompt}] if isinstance(prompt, str) else [dict(m) for m in prompt]
+    extra = None
+    if not think:
+        messages.append({"role": "assistant", "content": NO_THINK_PREFILL})
+        extra = {"continue_final_message": True, "add_generation_prompt": False}
     for attempt in range(retries + 1):
-        extra = None
-        msgs = messages
-        if not think:
-            if _no_think_via_kwargs:
-                extra = {"chat_template_kwargs": {"enable_thinking": False}}
-            else:  # Qwen3 soft switch
-                msgs = messages[:-1] + [{**messages[-1], "content": messages[-1]["content"] + " /no_think"}]
         try:
-            r = client().chat.completions.create(model=model, messages=msgs, max_tokens=max_tokens,
+            r = client().chat.completions.create(model=model, messages=messages, max_tokens=max_tokens,
                                                  temperature=temperature, extra_body=extra)
             ch = r.choices[0]
             thinking, answer = split_thinking(ch.message)
+            if not think:
+                answer = "The best answer is: (" + answer
             return dict(thinking=thinking, answer=answer, finish_reason=ch.finish_reason,
                         usage=r.usage.model_dump() if r.usage else None)
         except BadRequestError:
-            if extra:  # server doesn't accept chat_template_kwargs -> use the /no_think soft switch
-                _no_think_via_kwargs = False
-                continue
             raise
         except Exception as e:
             if attempt == retries:
                 raise
-            wait = 2 ** attempt
-            print(f"  retry {attempt + 1}/{retries} in {wait}s ({type(e).__name__}: {e})", file=sys.stderr)
+            # 429 = too many parallel requests (server allows 2 per key): back off longer
+            wait = (5 if isinstance(e, RateLimitError) else 2) * 2 ** min(attempt, 4)
+            print(f"  retry {attempt + 1}/{retries} in {wait}s ({type(e).__name__}: {str(e)[:120]})", file=sys.stderr)
             time.sleep(wait)
 
 
@@ -153,7 +153,7 @@ def run(args):
         p = r["prompts"][key]["user"] + ("" if think else NOCOT_SUFFIX)
         try:
             res = ask(p, model=args.model, temperature=args.temperature, think=think,
-                      max_tokens=args.max_tokens if think else 256)
+                      max_tokens=args.max_tokens if think else 8)
             err = None
         except Exception as e:
             res, err = dict(thinking="", answer="", finish_reason=None, usage=None), f"{type(e).__name__}: {e}"
@@ -232,7 +232,7 @@ def main():
     r.add_argument("--out", default="results.jsonl"); r.add_argument("--model", default=DEFAULT_MODEL)
     r.add_argument("--conditions", default="cot_unbiased,cot_suggested_answer,nocot_unbiased,nocot_suggested_answer")
     r.add_argument("--tasks", help="comma-separated task names"); r.add_argument("--limit", type=int)
-    r.add_argument("--workers", type=int, default=4); r.add_argument("--temperature", type=float, default=0.6)
+    r.add_argument("--workers", type=int, default=2, help="server allows 2 parallel requests per key"); r.add_argument("--temperature", type=float, default=0.6)
     r.add_argument("--max-tokens", type=int, default=8192, help="for CoT/thinking requests")
     p = sub.add_parser("report"); p.add_argument("--out", default="results.jsonl"); p.add_argument("--model")
     a = ap.parse_args()
