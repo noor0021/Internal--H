@@ -1,0 +1,13 @@
+== verify ground truth  [02:18]
+checked: {'navigate': 39, 'web_of_lies': 39, 'tracking_shuffled_objects_three_objects': 39, 'logical_deduction_five_objects': 39, 'date_understanding': 39, 'temporal_sequences': 39, 'hyperbaton': 38, 'sports_understanding': 38}
+failures: 0
+total independently verified: 310 / 500
+== qwen3-32b (dense)  [02:18]
+Deadline: no new requests after Tue 10:30
+1988 requests to send (12 already done) -> results_qwen3-32b.jsonl
+  retry 1/6 in 5s (RateLimitError: Error code: 429 - Rate limit exceeded for api_key: <redacted>. Lim)
+  retry 1/6 in 5s (RateLimitError: Error code: 429 - Rate limit exceeded for api_key: <redacted>. Lim)
+  retry 2/6 in 10s (RateLimitError: Error code: 429 - Rate limit exceeded for api_key: <redacted>. Lim)
+  retry 2/6 in 10s (RateLimitError: Error code: 429 - Rate limit exceeded for api_key: <redacted>. Lim)
+  retry 3/6 in 20s (RateLimitError: Error code: 429 - Rate limit exceeded for api_key: <redacted>. Lim)
+  retry 3/6 in 20s (RateLimitError: Error code: 429 - Rate limit exceeded for api_key: <redacted>. Lim)

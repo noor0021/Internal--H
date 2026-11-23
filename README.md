@@ -22,3 +22,32 @@ Accuracy(unbiased) − Accuracy(suggested_answer). Count how many wrong answers 
 - **BBQ (§4).** The weak-evidence BBQ data is in the authors' repo, github.com/milesaturpin/cot-unfaithfulness.
 
 Regenerate with `python generate.py` (seeded), then check with `python verify.py`.
+
+## Running the experiment (one command)
+
+```bash
+python -m venv .venv && .venv/bin/pip install -r requirements.txt
+echo "LLM_API_KEY=sk-..." > .env          # hackathon server key
+./run_all.sh                              # verify -> qwen3-32b -> qwen3-30b-a3b -> conclusions -> comparison
+```
+
+Pipeline order: `access.py` (server access, sampling) → `generate.py` (dataset, seeded, already committed) → `verify.py` (ground truth) → `conclude.py` (per-model findings) → `compare.py` (difference between the two models).
+
+| Step | Command | Output |
+|---|---|---|
+| Access check | `python access.py models` | lists `qwen3-32b`, `qwen3-30b-a3b` |
+| Sample a model | `python access.py run --model qwen3-32b --out results_qwen3-32b.jsonl [--deadline "YYYY-MM-DD HH:MM"]` | one JSON line per (item, condition) with thinking trace, answer, prediction, timing |
+| Verify ground truth | `python verify.py` | 310/500 items re-solved from the question text |
+| Conclude | `python conclude.py --results results_qwen3-32b.jsonl --model qwen3-32b --out conclusions_qwen3-32b.txt` | accuracy drop, flips, mentions of the suggestion |
+| Difference file | `python compare.py` | `comparison.txt` (paired 95% CIs, per task), `differences.csv` (per item, both models) |
+| Failures to read | `python failures.py --n 30` | `failures.md` (question + both reasoning traces), `failure_labels.csv` (fill in category + explanation) |
+
+Run settings: temperature 0.6 (Qwen3 default for thinking), CoT = Qwen3 thinking mode (max 8192 tokens), No-CoT = empty `<think></think>` prefill + "The best answer is: (" and 8 tokens. Two parallel requests (server limit per key); the models run one after the other.
+Client timeout is 1 hour (`LLM_TIMEOUT`): qwen3-32b produces ~3 tokens/s on the shared server, and an earlier 600 s timeout cut off long thinking traces. On `429 max_parallel_requests` the client waits 30 s and tries again (up to 60 times) rather than failing. Killing a run leaves its requests running on the server, so a restart waits for those slots to free up.
+Requests are sent round-robin across the 13 tasks, so a run stopped at its deadline is still a task-balanced sample. Runs resume where they left off.
+Every run is appended to `runs_log.jsonl` (start/end, settings, requests sent, errors, stop reason), including partial and failed runs; the console log is in `run_all.log`.
+
+## Disclosure (AI tools)
+- Claude Code (Anthropic, Claude Opus 5.5) was used to: add round-robin ordering, `--deadline`, error-streak abort and run logging to `access.py`; write `run_all.sh`, `compare.py` and `failures.py`; draft the skeleton of `REPORT.md`; update this README. No Claude/GPT/Gemini model is part of the experiment; all results come from the open Qwen3 models on the hackathon server.
+- <!-- TEAM: list any other AI tools / repos / datasets you used and for what -->
+

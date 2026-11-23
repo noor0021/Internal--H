@@ -48,7 +48,9 @@ def client():
         key = os.environ.get("LLM_API_KEY")
         if not key:
             sys.exit("No API key. Run: export LLM_API_KEY=sk-...   (or add LLM_API_KEY=... to a .env file)")
-        _client = OpenAI(base_url=BASE_URL, api_key=key, timeout=600, max_retries=0)
+        # qwen3-32b on the shared server generates ~3 tokens/s, so a full 8192-token thinking trace can take
+        # ~45 min. A 600 s timeout cut long traces off and re-sent them (wasting budget), so allow 1 hour.
+        _client = OpenAI(base_url=BASE_URL, api_key=key, timeout=float(os.environ.get("LLM_TIMEOUT", 3600)), max_retries=0)
     return _client
 
 
@@ -88,7 +90,8 @@ def ask(prompt, model=DEFAULT_MODEL, max_tokens=2048, temperature=0.6, think=Tru
     if not think:
         messages.append({"role": "assistant", "content": NO_THINK_PREFILL})
         extra = {"continue_final_message": True, "add_generation_prompt": False}
-    for attempt in range(retries + 1):
+    attempt = n429 = 0
+    while True:
         try:
             r = client().chat.completions.create(model=model, messages=messages, max_tokens=max_tokens,
                                                  temperature=temperature, extra_body=extra)
@@ -100,12 +103,21 @@ def ask(prompt, model=DEFAULT_MODEL, max_tokens=2048, temperature=0.6, think=Tru
                         usage=r.usage.model_dump() if r.usage else None)
         except BadRequestError:
             raise
-        except Exception as e:
-            if attempt == retries:
+        except RateLimitError as e:
+            # 429 max_parallel_requests: the server still counts an earlier request (e.g. one whose client
+            # disconnected) as running. Wait for the slot instead of failing; never send more than 2 at once.
+            n429 += 1
+            if n429 > 60:
                 raise
-            # 429 = too many parallel requests (server allows 2 per key): back off longer
-            wait = (5 if isinstance(e, RateLimitError) else 2) * 2 ** min(attempt, 4)
-            print(f"  retry {attempt + 1}/{retries} in {wait}s ({type(e).__name__}: {str(e)[:120]})", file=sys.stderr)
+            msg = re.sub(r"api_key: \w+", "api_key: <key>", str(e))
+            print(f"  429 wait {n429}/60, 30s ({msg[-110:]})", file=sys.stderr, flush=True)
+            time.sleep(30)
+        except Exception as e:
+            if attempt >= retries:
+                raise
+            wait = 2 * 2 ** min(attempt, 4)
+            attempt += 1
+            print(f"  retry {attempt}/{retries} in {wait}s ({type(e).__name__}: {str(e)[:120]})", file=sys.stderr, flush=True)
             time.sleep(wait)
 
 
@@ -129,13 +141,39 @@ def parse_label(text):
     return hits[-1].upper() if hits else None
 
 
+def round_robin(rows):
+    """Interleave items across tasks (task1#0, task2#0, ..., task1#1, ...) so that any prefix of the
+    run - e.g. one stopped at a deadline - is a task-balanced sample rather than only the first tasks."""
+    by_task = collections.defaultdict(list)
+    for r in rows:
+        by_task[r["task"]].append(r)
+    queues = list(by_task.values())
+    return [q[i] for i in range(max(map(len, queues), default=0)) for q in queues if i < len(q)]
+
+
+def parse_deadline(s):
+    """'YYYY-MM-DD HH:MM' (absolute) or 'HH:MM' (next occurrence of that local time) -> epoch seconds."""
+    if not s:
+        return None
+    if " " in s.strip():
+        return time.mktime(time.strptime(s.strip(), "%Y-%m-%d %H:%M"))
+    h, m = map(int, s.split(":"))
+    now = time.localtime()
+    t = time.mktime(now[:3] + (h, m, 0) + now[6:])
+    return t if t > time.time() else t + 86400
+
+
 def run(args):
     rows = [json.loads(l) for l in open(args.queries)]
     if args.tasks:
         rows = [r for r in rows if r["task"] in args.tasks.split(",")]
+    rows = round_robin(rows)
     if args.limit:
         rows = rows[:args.limit]
     conds = args.conditions.split(",")
+    deadline = parse_deadline(args.deadline)
+    if deadline:
+        print(f"Deadline: no new requests after {time.strftime('%a %H:%M', time.localtime(deadline))}")
     out = Path(args.out)
     done = set()
     if out.exists():
@@ -144,13 +182,19 @@ def run(args):
             if d.get("pred") is not None or d.get("finish_reason") == "length":
                 done.add((d["id"], d["condition"], d["model"]))
     jobs = [(r, c) for r in rows for c in conds if (r["id"], c, args.model) not in done]
-    print(f"{len(jobs)} requests to send ({len(done)} already done) -> {out}")
+    print(f"{len(jobs)} requests to send ({len(done)} already done) -> {out}", flush=True)
     lock = threading.Lock()
+    state = dict(consecutive_err=0, stop=None)
+    started = time.strftime("%Y-%m-%d %H:%M:%S")
 
     def work(job):
+        if state["stop"] or (deadline and time.time() > deadline):
+            state["stop"] = state["stop"] or "deadline reached"
+            return None
         r, c = job
         key, think = CONDITIONS[c]
         p = r["prompts"][key]["user"] + ("" if think else NOCOT_SUFFIX)
+        t0 = time.time()
         try:
             res = ask(p, model=args.model, temperature=args.temperature, think=think,
                       max_tokens=args.max_tokens if think else 8)
@@ -163,18 +207,34 @@ def run(args):
                    bias_contradicting_always_a=r["bias_contradicting_always_a"],
                    mentions_suggestion=bool(MENTION_RE.search(res["thinking"] + "\n" + res["answer"])) if "suggested" in c else None,
                    thinking=res["thinking"], answer=res["answer"], finish_reason=res["finish_reason"],
-                   usage=res["usage"], error=err)
-        with lock, out.open("a") as f:
-            f.write(json.dumps(rec, ensure_ascii=False) + "\n")
+                   usage=res["usage"], error=err, temperature=args.temperature,
+                   ts=time.strftime("%Y-%m-%d %H:%M:%S"), seconds=round(time.time() - t0, 1))
+        with lock:
+            with out.open("a") as f:
+                f.write(json.dumps(rec, ensure_ascii=False) + "\n")
+            state["consecutive_err"] = state["consecutive_err"] + 1 if err else 0
+            if state["consecutive_err"] >= args.max_consecutive_errors:  # e.g. key budget used up / server down
+                state["stop"] = f"{state['consecutive_err']} consecutive errors, last: {err[:200]}"
         return rec
 
-    n_err = 0
+    n_err = n_sent = 0
     with cf.ThreadPoolExecutor(args.workers) as ex:
         for i, rec in enumerate(ex.map(work, jobs), 1):
+            if rec is None:
+                continue
+            n_sent += 1
             n_err += rec["error"] is not None
-            if i % 10 == 0 or i == len(jobs):
-                print(f"  {i}/{len(jobs)} done, {n_err} errors")
-    print("Finished. Run: python access.py report" + (f" --out {args.out}" if args.out != "results.jsonl" else ""))
+            if n_sent % 10 == 0 or i == len(jobs):
+                print(f"  {n_sent}/{len(jobs)} sent, {n_err} errors  [{time.strftime('%H:%M')}]", flush=True)
+    reason = state["stop"] or "all jobs sent"
+    print(f"Stopped: {reason}. {n_sent} requests sent, {n_err} errors.")
+    with (HERE / "runs_log.jsonl").open("a") as f:  # one line per run, including failed/partial ones
+        f.write(json.dumps(dict(started=started, ended=time.strftime("%Y-%m-%d %H:%M:%S"), model=args.model,
+                                out=str(out), conditions=conds, temperature=args.temperature,
+                                max_tokens=args.max_tokens, workers=args.workers, deadline=args.deadline,
+                                limit=args.limit, tasks=args.tasks, queued=len(jobs), sent=n_sent,
+                                errors=n_err, stop_reason=reason)) + "\n")
+    print("Run: python access.py report" + (f" --out {args.out}" if args.out != "results.jsonl" else ""))
 
 
 # ----------------------------------------------------------------------------- report
@@ -234,6 +294,8 @@ def main():
     r.add_argument("--tasks", help="comma-separated task names"); r.add_argument("--limit", type=int)
     r.add_argument("--workers", type=int, default=2, help="server allows 2 parallel requests per key"); r.add_argument("--temperature", type=float, default=0.6)
     r.add_argument("--max-tokens", type=int, default=8192, help="for CoT/thinking requests")
+    r.add_argument("--deadline", help="local time HH:MM after which no new requests are started")
+    r.add_argument("--max-consecutive-errors", type=int, default=8, help="abort the run after this many errors in a row")
     p = sub.add_parser("report"); p.add_argument("--out", default="results.jsonl"); p.add_argument("--model")
     a = ap.parse_args()
 
